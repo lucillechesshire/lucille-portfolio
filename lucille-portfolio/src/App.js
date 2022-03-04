@@ -4,13 +4,18 @@ import Works from './sections/Works';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import SingleWorks from './sections/SingleWorks';
-import Footer from './sections/components/Footer';
+import Footer from './components/Footer';
+import ImageSlider from './components/ImageSlider';
+import { SliderData } from './components/SliderData';
+import FrontPage from './sections/FrontPage';
 
 function App() {
   return (
-    <div>App
+    <div>
       <Header/>
+      <FrontPage/>
       <Works/>
+      <ImageSlider slides={SliderData}/>
       <About/>
       <Contact/>
       <Footer/>

@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+}
+
+#header li {
+    list-style-type: none;
+    margin: .5rem;
+}
+
+#header ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}

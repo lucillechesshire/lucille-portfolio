@@ -1,4 +1,9 @@
-@import '../styles/sections/header';
+@import '../styles/sections/header.scss';
 @import '../styles/sections/works';
 @import '../styles/sections/about';
 @import '../styles/sections/contact.scss';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import '../styles/sections/main.scss';
+@import '../styles/sections/typography.scss';
+@import '../styles/sections/frontPage';
+

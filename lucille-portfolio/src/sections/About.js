@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About
+    <div id='about'>
         <p>I'm a front-end web developer 
         and designer based in Vancouver. 
         I pride myself in constructing clean 

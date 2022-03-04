@@ -1,15 +1,10 @@
 import React from 'react';
-import {allProjects} from './components/projectData';
+import {allProjects} from '../components/projectData';
 
 function Works() {
   return (
-    <div>Works
-      {allProjects.map((project) => (
-        <div>
-        <h2>{project.title}</h2>
-        <img src={project.url} alt =""/>
-        </div>
-      ))}
+    <div id='works'>
+     <h2>My Projects</h2>
     </div>
   )
 }

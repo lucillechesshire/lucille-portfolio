@@ -1,5 +1,5 @@
 import React from 'react';
-import {allProjects} from './components/projectData';
+import {allProjects} from '../components/projectData';
 
 function SingleWorks() {
   return (
@@ -9,4 +9,4 @@ function SingleWorks() {
   )
 }
 
-export default SingleWorks
+export default SingleWorks;
