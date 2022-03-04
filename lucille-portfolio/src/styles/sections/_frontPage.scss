@@ -12,22 +12,17 @@ p.name-title {
 
 .title-container {
     position: relative;
-    height: 100vh;
-    // background-image: url('/lucille-portfolio/src/assets/images/home-background.png');
+    height: 65vh;
+    display: flex;
 }
 .dot {
-    padding: .6rem 0 0 .25rem;
     color: black;
     font-weight: 900;
+    display: inline-block;
 }
 
 
-
-
-
-  .arrow {
-    background-color: black;
-    text-align: center;
+  .arrow-down {
     margin: 8% 0;
   }
   .bounce {

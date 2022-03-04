@@ -25,10 +25,11 @@ if(!Array.isArray(slides) || slides.length <= 0) {
     <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}  />
     {SliderData.map((slide, index) =>  {
         return (
-            <div className={index === current ? 'slide active' : 'slide'} key={index}>
-              {index === current && (<img key={index} className="project-img" src={slide.image} alt="" />)}
-              {index === current && (<h3 className='project-title'>{slide.title}</h3>)}
-            </div>
+              <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                {index === current && (<img key={index} className="project-img" src={slide.image} alt="" />)}
+                {index === current && (<h3 className='project-title'>{slide.title}</h3>)}
+              </div>
+
         )
     })}
     </section>
