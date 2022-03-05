@@ -1,10 +1,18 @@
+
+
+h3.project-title {
+    text-align: center;
+    padding: 1rem 0 .25rem 0;
+    }
+
+
+//.....Works Gallery Slider....//
+
 .slider {
     position: relative;
-    // height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
 
 }
 
@@ -16,10 +24,10 @@
 
 .right-arrow {
     position: absolute;
-    top: 50%;
-    right: 0;
-    font-size: 2.5rem;
-    color: white;
+    bottom: 5.2rem;
+    right: 1.5rem;
+    font-size: 2.3rem;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -27,10 +35,10 @@
 
 .left-arrow {
     position: absolute;
-    top: 50%;
-    left: 0;
-    font-size: 2.5rem;
-    color: white;
+    bottom: 5.2rem;
+    left: 1.5rem;
+    font-size: 2.3rem;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -47,6 +55,3 @@
     transform: scale(1.08);
 }
 
-.project-title {
-    text-align: center;
-}

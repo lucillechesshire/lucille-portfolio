@@ -1,26 +1,59 @@
-p.name-title {
+#home {
+  padding: 0 2rem;
+}
+#home h1 {
+  // color: #375ef4;
+}
+h1.name-title {
     position: absolute;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 900;
-    padding-top: 5rem;
+    padding-top: 10rem;
     display: flex;
     color: black;
     line-height: 1.25;
 }
 
 .title-container {
-    position: relative;
+    // position: relative;
     height: 65vh;
     display: flex;
-}
-.dot {
-    color: black;
-    font-weight: 900;
-    display: inline-block;
+    width: 90vw;
 }
 
+.descrip-words p {
+  text-transform: uppercase;
+  opacity: 50%;
+  color: #ff0084;
+}
+
+.coding {
+  padding-left: 2.5rem;
+}
+
+.branding {
+  padding-left: 5.5rem;
+}
+
+.innovating {
+  padding-left: 8.5rem;
+}
+
+.work-cta {
+  background-color: #ff0084;
+  padding: .5rem;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  bottom: 7rem;
+  border: none;
+  left: 10rem;
+}
+
+
+//....Arrow Styles....//
 
   .arrow-down {
     margin: 8% 0;
@@ -59,3 +92,17 @@ p.name-title {
       transform: translateY(-15px);
     }
   }
+
+// scroll bar //
+
+.scroll-container {
+  position: absolute;
+  width: 100vw;
+}
+
+.scroll-bar {
+  position: fixed;
+  left: 89%;
+  top: 31.5%;
+  padding-left: 1.1rem;
+}

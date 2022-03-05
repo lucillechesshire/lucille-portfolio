@@ -3,8 +3,11 @@
 @import '../styles/sections/about';
 @import '../styles/sections/contact.scss';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
-@import '../styles/sections/main.scss';
-@import '../styles/sections/typography.scss';
+@import '../styles/elements/main';
 @import '../styles/sections/frontPage';
+@import '../styles/elements/pageDecoration';
+@import '../styles/elements/typography';
+@import '../styles/sections/footer';
+@import '../styles/normalize-fwd.css';
 
 
