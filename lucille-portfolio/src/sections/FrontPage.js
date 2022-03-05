@@ -13,13 +13,13 @@ function FrontPage() {
         <div className='scroll-container'>
           <img className='scroll-bar' src={scrollBar} />
         </div>
-      <section className='title-container'>
-      <div className='descrip-words'>
+        <div className='descrip-words'>
         <p className='ux'>UX/UI.</p>
         <p className='coding'>Coding.</p>
         <p className='branding'>Branding.</p>
         <p className='innovating'>Innovating.</p>
       </div>
+      <section className='title-container'>
       <h1 className='name-title'>Lucille Chesshire</h1>
       </section>
       <button className='work-cta'><a href="#works">My Work</a></button>
