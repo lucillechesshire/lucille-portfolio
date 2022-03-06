@@ -4,7 +4,7 @@ import AllWorks from '../components/AllWorks.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import { SliderData } from '../components/SliderData';
-import scrollBar from '../assets/images/scroll-bar.svg';
+import scrollBar from '../assets/svgs/scroll-bar.svg';
 
 
 function FrontPage() {
