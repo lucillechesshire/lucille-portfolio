@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { SliderData } from '../components/SliderData';
 
 
+
 function SingleWorks() {
   const { slug } =  useParams();
   const [project, setProject] = useState(null);
@@ -39,7 +40,7 @@ function SingleWorks() {
       <p>{project.design}</p>
       <h3>{project.devTitle}</h3>
       <p>{project.development}</p>
-      <p>{project.colorPallete}</p>
+      <img src={project.colorBlocks}/>
 
     </div>
     )}
