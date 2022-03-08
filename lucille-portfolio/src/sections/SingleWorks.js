@@ -8,6 +8,7 @@ import { SliderData } from '../components/SliderData';
 function SingleWorks() {
   const { slug } =  useParams();
   const [project, setProject] = useState(null);
+  const [isVisible, setIsVisible] = useState(null);
 
   useEffect(() => {
     const data =SliderData.filter((item) => item.slug === slug);
@@ -36,17 +37,44 @@ function SingleWorks() {
       <div className='components-list'>
         <ul><li>{project.components}</li></ul>
       </div>
-      <h3>{project.designTitle}</h3>
-      <p>{project.design}</p>
-      <h3>{project.devTitle}</h3>
-      <p>{project.development}</p>
-      <img src={project.colorBlocks}/>
+      <div onClick ={() => setIsVisible(!isVisible)}>See More</div>
+      {isVisible ? <MoreInfo/>: ""}
+
+      
 
     </div>
     )}
     
     </main>
   );
+
 }
 
 export default SingleWorks;
+
+function MoreInfo() {
+  const { slug } =  useParams();
+  const [project, setProject] = useState(null);
+
+  useEffect(() => {
+    const data =SliderData.filter((item) => item.slug === slug);
+    if (data !== null) {
+        setProject(data[0]);
+    }
+  },[slug]);
+
+  return <div>
+    {project != null && (
+    <>
+    <h3>{project.designTitle}</h3>
+      <p>{project.design}</p>
+      <h3>{project.devTitle}</h3>
+      <p>{project.development}</p>
+      {project.colorBlocks.map((project, index) => (
+      <div className='color-blocks'>
+      <img key={index} src={project}/>
+      </div>
+      )) }
+      </>)}
+  </div>;
+}
