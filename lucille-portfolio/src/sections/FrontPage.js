@@ -5,6 +5,7 @@ import About from "./About.js";
 import Contact from "./Contact.js";
 import { SliderData } from "../components/SliderData";
 import scrollBar from "../assets/svgs/scroll-bar.svg";
+import Marquee from "react-fast-marquee";
 
 function FrontPage() {
   return (
@@ -14,7 +15,10 @@ function FrontPage() {
       </div>
       <section className="title-container">
         <div className="descrip-words">
-          <p className="coding">Coding.</p>
+          <p className="coding">
+            <Marquee gradient={false}>Coding.</Marquee>
+          </p>
+
           <p className="branding">Branding.</p>
           <p className="innovating">Innovating.</p>
           <p className="ux">UX/UI.</p>
@@ -30,7 +34,7 @@ function FrontPage() {
       <div className="arrow bounce">
         <a className="fa fa-arrow-down fa-2x" href="#works"></a>
       </div>
-      <div className="line-deco"></div>
+      {/* <div className="line-deco"></div> */}
       <AllWorks slides={SliderData} />
       <About />
       <Contact />

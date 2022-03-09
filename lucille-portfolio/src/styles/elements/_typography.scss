@@ -2,17 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Noto+Serif+Display:wght@400;500;600;700;900&family=Poppins:wght@100;200;300;400;500&display=swap");
 h2 {
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Birdy";
   font-weight: 400;
   padding-bottom: 1rem;
-  margin-top: 2rem;
+  font-size: 1.2rem;
 }
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  // text-transform: uppercase;
+  // font-family: "Montserrat", sans-serif;
+  font-family: "Poppins";
+  color: black;
 }
 
 h4 {
