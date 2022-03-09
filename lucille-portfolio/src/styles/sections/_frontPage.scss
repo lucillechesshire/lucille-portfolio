@@ -23,10 +23,8 @@ h1.name-title {
 }
 
 .title-container {
-  height: 65vh;
+  height: 82vh;
   display: flex;
-  // width: 90vw;
-  // margin: 0 auto;
 }
 
 .descrip-words p {
@@ -58,22 +56,7 @@ p.ux {
 }
 
 .work-cta {
-  // background-image: linear-gradient(
-  //   45deg,
-  //   hsl(168deg 94% 68%) 0%,
-  //   hsl(130deg 71% 76%) 9%,
-  //   hsl(75deg 57% 67%) 18%,
-  //   hsl(43deg 76% 67%) 27%,
-  //   hsl(27deg 100% 70%) 36%,
-  //   hsl(15deg 100% 69%) 45%,
-  //   hsl(356deg 100% 68%) 55%,
-  //   hsl(337deg 100% 58%) 64%,
-  //   hsl(323deg 100% 48%) 73%,
-  //   hsl(312deg 100% 45%) 82%,
-  //   hsl(295deg 68% 49%) 91%,
-  //   hsl(268deg 81% 59%) 100%
-  // );
-  background-color: #f93efc;
+  background-color: black;
   padding: 0.5rem;
   text-align: center;
   border-radius: 10px;
@@ -85,14 +68,15 @@ p.ux {
 
 //....Arrow Styles....//
 
-div.arrow-bounce {
-  padding: 2rem;
+.arrow-down {
+  margin: 20% 0;
 }
 
-.arrow-down {
-  margin: 8% 0;
-  fill: white;
-  background-color: #fff;
+.fa-arrow-down:before {
+  color: black;
+  position: absolute;
+  bottom: 2rem;
+  left: 0.75rem;
 }
 .bounce {
   -webkit-animation: bounce 2s infinite;
@@ -139,7 +123,7 @@ div.arrow-bounce {
 .scroll-bar {
   position: fixed;
   right: 0.6rem;
-  top: 12.5rem;
+  top: 10.9rem;
   z-index: 1000;
 }
 
