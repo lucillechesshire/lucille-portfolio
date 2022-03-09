@@ -7,9 +7,12 @@ import pinkBlock from "../assets/svgs/color-blocks/block-pink.svg";
 export const SliderData = [
   {
     key: 1,
-    title: "Match the Fruits",
+    title: "Fruit Basket",
     image: IMAGES.projImg1,
     slug: "javascript-game",
+    description: "A card matching game for all ages",
+    type: "Browser-based game",
+    screenshot: require("../assets/images/screenshots/fruitbasket-screenshot.png"),
     summary:
       "Designed and built an interactive card matching game using jQuery, HTML and CSS.",
     year: "2021",
@@ -25,6 +28,11 @@ export const SliderData = [
     ],
     design:
       "Started out by creating a rough static design of the game using Adobe Illustrator, as well as a written game plan consisting of all the variables, features, and functionality. Designed all game cards and board using Adobe Photoshop and imported the Bootstrap library for buttons and styles. Styled with basic CSS.",
+    sitePics: [
+      require("../assets/images/sitePics/js-easy.png"),
+      require("../assets/images/sitePics/js-medium.png"),
+      require("../assets/images/sitePics/js-hard.png"),
+    ],
     development:
       "My first experience with JavaScript programming. Used my base knowledge of vanilla JavaScript to use the jQuery library to simplify DOM manipulation. Created multiple functions containing event handlers and loops to manage overall functionality and UX of the game.",
     colorBlocks: [

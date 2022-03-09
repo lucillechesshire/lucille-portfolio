@@ -1,13 +1,12 @@
 #single-works {
-  padding: 0 2rem;
+  padding: 0;
 }
 
-.skills-list {
-  max-width: 20px;
-}
-
-.components-list {
-  max-width: 11rem;
+#single-works h4,
+#single-works h3 {
+  font-family: "Birdy";
+  padding-bottom: 0.75rem;
+  padding-top: 2rem;
 }
 
 .all-color-blocks {
@@ -20,12 +19,17 @@
   column-gap: 0.75rem;
 }
 
-.color-block-img {
+#single-works img {
+  display: block;
+  max-width: 250px;
+  max-height: 250px;
+  margin: 0 auto;
+}
+#single-works .color-block-img {
   display: block;
   max-width: 100px;
   max-height: 100px;
 }
-
 .colors-title {
   text-align: center;
 }
@@ -33,4 +37,83 @@
 p.hex {
   text-align: center;
   margin-bottom: 0;
+}
+
+#single-works h2 {
+  font-size: 1.2rem;
+}
+
+.javascript-game {
+  background-color: #33b2f3;
+  height: 87vh;
+  color: black;
+  padding-top: 3rem;
+}
+
+.javascript-game .header {
+  background-color: #02c5fe;
+}
+
+.javascript-game p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.javascript-game .screenshot {
+  filter: drop-shadow(0 0 0.75rem white);
+  padding-top: 1rem;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.javascript-game .fa-arrow-down:before {
+  color: white;
+  position: absolute;
+  bottom: -2rem;
+  left: 0.75rem;
+}
+
+.single-info {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #e5e5e5;
+}
+
+.year-skills {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+.see-more-btn {
+  background-color: #ff0084;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.components-list {
+  padding-bottom: 2rem;
+}
+
+.design-div {
+  padding-top: 3rem;
+}
+
+.screen-pics {
+  padding: 0.5rem 0;
+}
+
+.dev-div {
+  padding-top: 3rem;
+}
+
+.colors-title {
+  padding-top: 2rem;
 }
