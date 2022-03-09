@@ -1,97 +1,133 @@
 #home {
-  padding: 0 2rem;
-}
-#home h1 {
-  // color: #375ef4;
+  background: #e5e5e5;
 }
 h1.name-title {
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: 900;
-    padding-top: 10rem;
+  position: absolute;
+  // font-family: "Noto Serif Display", serif;
+  // font-family: "Libre Baskerville", serif;
+  font-family: "Birdy";
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: 900;
+  padding-top: 10rem;
+  color: black;
+  line-height: 1.25;
+  right: 2rem;
+
+  @media (min-width: 600px) {
     display: flex;
-    color: black;
-    line-height: 1.25;
+    gap: 1rem;
+    font-size: 3.2rem;
+    padding-top: 13rem;
+  }
 }
 
 .title-container {
-    // position: relative;
-    height: 65vh;
-    display: flex;
-    width: 90vw;
+  height: 65vh;
+  display: flex;
+  // width: 90vw;
+  // margin: 0 auto;
 }
 
 .descrip-words p {
   text-transform: uppercase;
-  opacity: 50%;
+  opacity: 20%;
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+p.ux {
+  color: #5ffada;
+  top: 27rem;
+  left: 9vw;
+}
+.coding {
   color: #ff0084;
 }
 
-.coding {
-  padding-left: 2.5rem;
-}
-
 .branding {
-  padding-left: 5.5rem;
+  color: #ffb56d;
+  top: 11rem;
+  right: 8vw;
 }
 
 .innovating {
-  padding-left: 8.5rem;
+  color: #9242eb;
+  top: 33rem;
+  right: 4vw;
 }
 
 .work-cta {
-  background-color: #ff0084;
-  padding: .5rem;
+  // background-image: linear-gradient(
+  //   45deg,
+  //   hsl(168deg 94% 68%) 0%,
+  //   hsl(130deg 71% 76%) 9%,
+  //   hsl(75deg 57% 67%) 18%,
+  //   hsl(43deg 76% 67%) 27%,
+  //   hsl(27deg 100% 70%) 36%,
+  //   hsl(15deg 100% 69%) 45%,
+  //   hsl(356deg 100% 68%) 55%,
+  //   hsl(337deg 100% 58%) 64%,
+  //   hsl(323deg 100% 48%) 73%,
+  //   hsl(312deg 100% 45%) 82%,
+  //   hsl(295deg 68% 49%) 91%,
+  //   hsl(268deg 81% 59%) 100%
+  // );
+  background-color: #f93efc;
+  padding: 0.5rem;
   text-align: center;
   border-radius: 10px;
-  position: relative;
-  bottom: 7rem;
+  position: absolute;
+  bottom: 12rem;
   border: none;
-  left: 10rem;
+  right: 2rem;
 }
-
 
 //....Arrow Styles....//
 
-  .arrow-down {
-    margin: 8% 0;
+div.arrow-bounce {
+  padding: 2rem;
+}
+
+.arrow-down {
+  margin: 8% 0;
+  fill: white;
+  background-color: #fff;
+}
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  .bounce {
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+  40% {
+    transform: translateY(-30px);
   }
-  @-webkit-keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
+  60% {
+    transform: translateY(-15px);
   }
-  @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 
 // scroll bar //
 
@@ -102,7 +138,16 @@ h1.name-title {
 
 .scroll-bar {
   position: fixed;
-  left: 89%;
-  top: 31.5%;
-  padding-left: 1.1rem;
+  right: 0.6rem;
+  top: 12.5rem;
+  z-index: 1000;
+}
+
+.scroll-bar-svg {
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+#home a {
+  color: white;
 }

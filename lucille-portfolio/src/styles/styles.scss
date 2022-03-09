@@ -1,14 +1,34 @@
-@import '../styles/normalize-fwd.css';
-@import '../styles/sections/header.scss';
-@import '../styles/sections/works';
-@import '../styles/sections/about';
-@import '../styles/sections/contact.scss';
+@import "../styles/normalize-fwd.css";
+@import "../styles/sections/header.scss";
+@import "../styles/sections/works";
+@import "../styles/sections/about";
+@import "../styles/sections/contact.scss";
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
-@import '../styles/elements/main';
-@import '../styles/sections/frontPage';
-@import '../styles/elements/pageDecoration';
-@import '../styles/elements/typography';
-@import '../styles/sections/footer';
-@import '../styles/sections/singleWorks';
+@import "../styles/elements/main";
+@import "../styles/sections/frontPage";
+@import "../styles/elements/pageDecoration";
+@import "../styles/elements/typography";
+@import "../styles/sections/footer";
+@import "../styles/sections/singleWorks";
 
+@font-face {
+  font-family: "Bosch";
+  src: local("Bosch"),
+    url(../assets/fonts/Bosch-Personal-Use.ttf) format("truetype");
+}
 
+@font-face {
+  font-family: "Nighty";
+  src: local("Nighty"), url(../assets/fonts/Nightydemo.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Myst";
+  src: local("Myst"), url(../assets/fonts/EXILE12.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Birdy";
+  src: local("Birdy"),
+    url(../assets/fonts/WhirlyBirdie-WideBold.ttf) format("truetype");
+}
