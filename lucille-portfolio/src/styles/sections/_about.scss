@@ -1,16 +1,20 @@
-// #about {
-//     padding: .5rem 2rem 0 2rem;
-// }
+#about {
+  margin: 4rem 0;
+}
 
 .about-blurbs {
-    padding-top: 1rem;
+  padding-top: 4rem;
 }
 #about li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #about ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 0;
+}
+
+.my-tools {
+  padding-top: 1rem;
 }

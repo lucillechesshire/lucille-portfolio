@@ -3,7 +3,6 @@ import React from "react";
 function Contact() {
   return (
     <section id="contact">
-      <div className="line-deco"></div>
       <h2>Let's Work Together!</h2>
       <p>
         I'm eager to help bring your ideas to life! If you are interested in

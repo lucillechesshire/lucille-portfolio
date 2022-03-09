@@ -11,19 +11,19 @@ h3.project-title {
   justify-content: center;
   align-items: center;
   background-color: #f9f9f7;
+  padding: 5rem 0;
 }
 
 .project-img {
   max-width: 15rem;
   height: auto;
-  border-radius: 10px;
 }
 
 .right-arrow {
   position: absolute;
   bottom: 5.2rem;
   right: 1.5rem;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   color: black;
   z-index: 10;
   cursor: pointer;
@@ -34,7 +34,7 @@ h3.project-title {
   position: absolute;
   bottom: 5.2rem;
   left: 1.5rem;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   color: black;
   z-index: 10;
   cursor: pointer;
@@ -43,7 +43,7 @@ h3.project-title {
 
 .slide {
   opacity: 0;
-  transition-duration: 1s ease;
+  transition-duration: 1s;
 }
 
 .slide.active {

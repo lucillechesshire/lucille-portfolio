@@ -4,6 +4,7 @@ function About() {
   return (
     <section id="about">
       <h2>My Tools</h2>
+      <div className="line-deco"></div>
       <div className="my-tools">
         <h3>Dev Tools</h3>
         <div className="tools-list">
