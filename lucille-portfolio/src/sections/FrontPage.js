@@ -7,11 +7,7 @@ import { SliderData } from "../components/SliderData";
 // import scrollBar from "../assets/svgs/scroll-bar.svg";
 import { motion } from "framer-motion";
 
-
-
 function FrontPage() {
-
-
   return (
     <motion.div
       initial={{ scaleX: 0 }}
@@ -101,10 +97,11 @@ function FrontPage() {
             <span className="dot">.</span>
           </motion.div>
         </h1>
+        <button className="work-cta">
+          <a href="#works">My Work</a>
+        </button>
       </section>
-      <button className="work-cta">
-        <a href="#works">My Work</a>
-      </button>
+
       <div className="arrow bounce">
         <a className="fa fa-arrow-down fa-2x" href="#works"></a>
       </div>

@@ -19,15 +19,15 @@ function About() {
   return (
     <section id="about">
       <div className="all-about-me">
-        <motion.div
-          ref={ref}
-          animate={controls}
-          initial="hiddenRight"
-          variants={slideInVariants}
-          className="my-tools"
-        >
+        <div className="my-tools">
           <div className="line-deco"></div>
-          <div className="tools-list">
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hiddenRight"
+            variants={slideInVariants}
+            className="tools-list"
+          >
             <h2>My Tools</h2>
             <h3>Dev Tools</h3>
             <ul>
@@ -40,16 +40,24 @@ function About() {
               <li>WordPress</li>
               <li>Php</li>
             </ul>
-          </div>
-          <h3>Design Tools</h3>
-          <ul>
-            <li>Adobe XD</li>
-            <li>Invision</li>
-            <li>Figma</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-          </ul>
-        </motion.div>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hiddenLeft"
+            variants={slideInVariants}
+            className="design-list"
+          >
+            <h3>Design Tools</h3>
+            <ul>
+              <li>Adobe XD</li>
+              <li>Invision</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </motion.div>
+        </div>
         <div className="line-deco"></div>
         <div className="about-blurbs">
           <motion.div

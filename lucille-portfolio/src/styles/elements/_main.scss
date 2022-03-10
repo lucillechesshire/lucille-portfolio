@@ -1,5 +1,7 @@
 body {
   background-color: black;
+  overflow-x: hidden;
+  position: relative;
 }
 
 section {
@@ -9,4 +11,5 @@ section {
 html {
   scroll-behavior: smooth;
   background-color: black;
+  overflow-x: hidden;
 }
