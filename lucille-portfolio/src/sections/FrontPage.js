@@ -5,10 +5,13 @@ import About from "./About.js";
 import Contact from "./Contact.js";
 import { SliderData } from "../components/SliderData";
 // import scrollBar from "../assets/svgs/scroll-bar.svg";
-import { useAnimation, motion, AnimatePresence } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
+
 
 function FrontPage() {
+
+
   return (
     <motion.div
       initial={{ scaleX: 0 }}

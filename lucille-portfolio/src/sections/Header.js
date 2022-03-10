@@ -13,7 +13,7 @@ function Header() {
             ? "#33b2f3"
             : pathname === "/movie-database"
             ? "black"
-            : "#e5e5e5",
+            : "#f9f9f7",
       }}
     >
       <ul>

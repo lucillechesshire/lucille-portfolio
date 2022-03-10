@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Header />
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<FrontPage />} />
           <Route path="/:slug" element={<SingleWorks />} />
