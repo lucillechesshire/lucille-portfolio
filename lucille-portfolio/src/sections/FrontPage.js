@@ -5,13 +5,19 @@ import About from "./About.js";
 import Contact from "./Contact.js";
 import { SliderData } from "../components/SliderData";
 // import scrollBar from "../assets/svgs/scroll-bar.svg";
+import { useAnimation, motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function FrontPage() {
   return (
-    <div className="home" id="home">
-      {/* <div className="scroll-container">
-        <img className="scroll-bar" src={scrollBar} />
-      </div> */}
+    <motion.div
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      exit={{ scaleX: 0 }}
+      transition={{ duration: 0.5 }}
+      className="home"
+      id="home"
+    >
       <section className="title-container">
         <div className="descrip-words">
           <p className="jt --debug coding">
@@ -33,7 +39,7 @@ function FrontPage() {
               <span className="jt__text">Branding.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span class="jt__text">Branding.</span>
+              <span className="jt__text">Branding.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
               <span className="jt__text">Branding.</span>
@@ -74,10 +80,23 @@ function FrontPage() {
           </p>
         </div>
         <h1 className="name-title">
-          <div className="lucille">Lucille</div>
-          <div className="chesshire">
-            Chesshire<span className="dot">.</span>
-          </div>
+          <motion.div
+            initial={{ x: -200 }}
+            transition={{ duration: 0.8 }}
+            animate={{ x: 0 }}
+            className="lucille"
+          >
+            Lucille
+          </motion.div>
+          <motion.div
+            initial={{ x: 200 }}
+            transition={{ duration: 0.8 }}
+            animate={{ x: 0 }}
+            className="chesshire"
+          >
+            Chesshire
+            <span className="dot">.</span>
+          </motion.div>
         </h1>
       </section>
       <button className="work-cta">
@@ -89,7 +108,7 @@ function FrontPage() {
       <AllWorks slides={SliderData} />
       <About />
       <Contact />
-    </div>
+    </motion.div>
   );
 }
 

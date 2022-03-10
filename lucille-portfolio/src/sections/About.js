@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const toolVariants = {
+  visible: { opacity: 1, transition: { duration: 1.5 }, y: 0 },
+  hidden: { opacity: 1, y: -250 },
+};
 
 function About() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <section id="about">
-      <h2>My Tools</h2>
-      <div className="line-deco"></div>
-      <div className="my-tools">
+      <div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={toolVariants}
+        className="my-tools"
+      >
+        <div className="line-deco"></div>
+        <h2>My Tools</h2>
         <h3>Dev Tools</h3>
         <div className="tools-list">
           <ul>

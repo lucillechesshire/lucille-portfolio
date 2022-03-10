@@ -3,6 +3,7 @@ import { allProjects } from "../components/projectData";
 import { useParams } from "react-router-dom";
 import { SliderData } from "../components/SliderData";
 import { Link } from "react-scroll";
+import { motion, AnimatePresence } from "framer-motion";
 
 function SingleWorks() {
   const { slug } = useParams();
@@ -19,12 +20,17 @@ function SingleWorks() {
   return (
     <section className="single-works" id="single-works">
       {project !== null && (
-        <div>
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          exit={{ scaleX: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <section className={slug}>
             <p>{project.title}</p>
             <h2>{project.description}</h2>
             <p>{project.type}</p>
-            <img class="screenshot" src={project.screenshot} />
+            <img className="screenshot" src={project.screenshot} />
             <div className="arrow bounce">
               <a className="fa fa-arrow-down fa-2x" href="#single-info"></a>
             </div>
@@ -67,7 +73,7 @@ function SingleWorks() {
             </a>
             {isVisible ? <MoreInfo /> : ""}
           </section>
-        </div>
+        </motion.div>
       )}
     </section>
   );
