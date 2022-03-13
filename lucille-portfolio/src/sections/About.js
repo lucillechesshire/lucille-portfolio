@@ -3,7 +3,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const slideInVariants = {
-  visible: { opacity: 1, transition: { duration: 1 }, x: 0 },
+  visible: { opacity: 1, transition: { duration: 1.4 }, x: 0 },
   hiddenRight: { opacity: 0, x: 200 },
   hiddenLeft: { opacity: 0, x: -200 },
 };
@@ -18,6 +18,7 @@ function About() {
             whileInView="visible"
             initial="hiddenRight"
             variants={slideInVariants}
+            // viewport={{ amount: 1 }}
             className="tools-list"
           >
             <h2>My Tools</h2>
