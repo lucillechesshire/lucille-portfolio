@@ -14,6 +14,7 @@ h1.name-title {
   color: black;
   line-height: 1.25;
   right: 1rem;
+  top: 3rem;
 
   @media (min-width: 550px) {
     display: flex;
@@ -32,31 +33,35 @@ h1.name-title {
 }
 
 .title-container {
-  height: 82vh;
+  height: 90vh;
   display: flex;
   position: relative;
 }
 
 .descrip-words p {
   text-transform: uppercase;
-  opacity: 30%;
   font-size: 2.5rem;
   position: absolute;
 }
 
+.coding {
+  top: 5.5rem;
+  left: 4vw;
+}
+
 .designing {
-  top: 22rem;
+  top: 26.5rem;
   left: 6vw;
 }
 
 .branding {
-  top: 7rem;
+  top: 10.5rem;
   right: 8vw;
 }
 
 .innovating {
-  top: 29rem;
-  right: 4vw;
+  top: 32.25rem;
+  right: 2vw;
 }
 
 .work-cta {
@@ -65,7 +70,7 @@ h1.name-title {
   text-align: center;
   border-radius: 10px;
   position: absolute;
-  bottom: 12rem;
+  bottom: 8.5rem;
   border: none;
   right: 1rem;
 }

@@ -9,21 +9,13 @@ const slideInVariants = {
 };
 
 function About() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
   return (
     <section id="about">
       <div className="all-about-me">
         <div className="my-tools">
           <div className="line-deco"></div>
           <motion.div
-            ref={ref}
-            animate={controls}
+            whileInView="visible"
             initial="hiddenRight"
             variants={slideInVariants}
             className="tools-list"
@@ -42,8 +34,7 @@ function About() {
             </ul>
           </motion.div>
           <motion.div
-            ref={ref}
-            animate={controls}
+            whileInView="visible"
             initial="hiddenLeft"
             variants={slideInVariants}
             className="design-list"
@@ -61,8 +52,7 @@ function About() {
         <div className="line-deco"></div>
         <div className="about-blurbs">
           <motion.div
-            ref={ref}
-            animate={controls}
+            whileInView="visible"
             initial="hiddenLeft"
             variants={slideInVariants}
             className="about-skills"
@@ -77,8 +67,7 @@ function About() {
             </p>
           </motion.div>
           <motion.div
-            ref={ref}
-            animate={controls}
+            whileInView="visible"
             initial="hiddenRight"
             variants={slideInVariants}
             className="about-me"

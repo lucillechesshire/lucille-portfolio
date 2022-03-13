@@ -5,4 +5,6 @@ const IMAGES = {
     projImg4: require("./flower-pic.jpg"),
 }
 
+
+
 export default IMAGES;

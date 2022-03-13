@@ -25,25 +25,19 @@ function SingleWorks() {
   const { slug } = useParams();
   const [project, setProject] = useState(null);
   const [isVisible, setIsVisible] = useState(null);
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
   useEffect(() => {
     const data = SliderData.filter((item) => item.slug === slug);
     if (data !== null) {
       setProject(data[0]);
     }
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [slug, controls, inView]);
+  }, [slug]);
 
   return (
     <section className="single-works" id="single-works">
       {project !== null && (
         <div>
-          <section className={slug}>
-            <p>{project.title}</p>
+          <section className={slug} id="single-cover">
+            <p className="proj-title">{project.title}</p>
             <h2>{project.description}</h2>
             <p>{project.type}</p>
             <img className="screenshot" src={project.screenshot} />
@@ -53,8 +47,7 @@ function SingleWorks() {
           </section>
           <section className="single-info" id="single-info">
             <motion.div
-              ref={ref}
-              animate={controls}
+              whileInView="visible"
               initial="hiddenRight"
               variants={slideInVariants}
               className="overview"
@@ -64,8 +57,7 @@ function SingleWorks() {
             </motion.div>
             <div className="year-skills-components">
               <motion.div
-                ref={ref}
-                animate={controls}
+                whileInView="visible"
                 initial="hiddenLeft"
                 variants={slideInVariants}
                 className="year-skills"
@@ -84,8 +76,7 @@ function SingleWorks() {
                 </div>
               </motion.div>
               <motion.div
-                ref={ref}
-                animate={controls}
+                whileInView="visible"
                 initial="hiddenRight"
                 variants={slideInVariants}
                 className="components-list"
@@ -146,8 +137,8 @@ function MoreInfo() {
             <h3>Concept and Design</h3>
             <p>{project.design}</p>
             {project.sitePics.map((project, index) => (
-              <div>
-                <img className="screen-pics" key={index} src={project} />
+              <div key={index}>
+                <img className="screen-pics" src={project} />
               </div>
             ))}
           </motion.div>

@@ -43,36 +43,51 @@ p.hex {
   font-size: 1.2rem;
 }
 
-.javascript-game {
-  background-color: #33b2f3;
-  height: 87vh;
-  color: black;
+.proj-title {
+  padding-top: 2.7rem;
+}
+
+#single-cover {
+  height: 100vh;
   padding-top: 3rem;
 }
 
-.javascript-game .header {
-  background-color: #02c5fe;
-}
-
-.javascript-game p {
+#single-cover p {
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.javascript-game .screenshot {
+#single-cover .fa-arrow-down:before {
+  color: white;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0.75rem;
+}
+
+#single-cover .screenshot {
   filter: drop-shadow(0 0 0.75rem white);
-  padding-top: 1rem;
+  padding-top: 2rem;
   max-width: 250px;
   margin: 0 auto;
   text-align: center;
   display: block;
 }
 
-.javascript-game .fa-arrow-down:before {
+//Javascript Game //
+.javascript-game {
+  background-color: #33b2f3;
+  color: black;
+}
+
+.javascript-game .header {
+  background-color: #02c5fe;
+}
+
+//Movie Database//
+
+.movie-database {
+  background-color: black;
   color: white;
-  position: absolute;
-  bottom: -2rem;
-  left: 0.75rem;
 }
 
 .single-info {

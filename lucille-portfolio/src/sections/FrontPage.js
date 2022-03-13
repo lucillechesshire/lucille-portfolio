@@ -6,6 +6,39 @@ import Contact from "./Contact.js";
 import { SliderData } from "../components/SliderData";
 // import scrollBar from "../assets/svgs/scroll-bar.svg";
 import { motion } from "framer-motion";
+import Banner from "../components/Banner.js";
+import Marquee from "react-fast-marquee";
+
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 200,
+  },
+  show: {
+    opacity: [1, 0.75, 1, 0.4],
+    y: 0,
+    transition: {
+      ease: [0.6, 0.01, -0.05, 0.95],
+      duration: 3,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -200,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.8,
+    },
+  },
+};
 
 function FrontPage() {
   return (
@@ -18,8 +51,14 @@ function FrontPage() {
       id="home"
     >
       <section className="title-container">
-        <div className="descrip-words">
-          <p className="jt --debug coding">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+          className="descrip-words"
+        >
+          <motion.p variants={item} className="jt --debug coding">
             <span className="jt__row">
               <span className="jt__text">Coding.</span>
             </span>
@@ -32,8 +71,8 @@ function FrontPage() {
             <span className="jt__row jt__row--sibling" aria-hidden="true">
               <span className="jt__text">Coding.</span>
             </span>
-          </p>
-          <p className="jt --debug branding">
+          </motion.p>
+          <motion.p variants={item} className="jt --debug branding">
             <span className="jt__row">
               <span className="jt__text">Branding.</span>
             </span>
@@ -46,39 +85,39 @@ function FrontPage() {
             <span className="jt__row jt__row--sibling" aria-hidden="true">
               <span className="jt__text">Branding.</span>
             </span>
-          </p>
+          </motion.p>
 
-          <p className="jt --debug innovating">
+          <motion.p variants={item} className="jt --debug designing">
             <span className="jt__row">
-              <span className="jt__text">Innovating.</span>
+              <span className="jt__text">Designing.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Innovating.</span>
+              <span className="jt__text">Designing.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Innovating.</span>
+              <span className="jt__text">Designing.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Innovating.</span>
+              <span className="jt__text">Designing.</span>
             </span>
-          </p>
+          </motion.p>
 
-          <p className="jt --debug designing">
+          <motion.p variants={item} className="jt --debug innovating">
             <span className="jt__row">
-              <span className="jt__text">Designing.</span>
+              <span className="jt__text">Innovating.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Designing.</span>
+              <span className="jt__text">Innovating.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Designing.</span>
+              <span className="jt__text">Innovating.</span>
             </span>
             <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Designing.</span>
+              <span className="jt__text">Innovating.</span>
             </span>
-          </p>
-        </div>
-        <h1 className="name-title">
+          </motion.p>
+        </motion.div>
+        {/* <motion.h1 className="name-title">
           <motion.div
             initial={{ x: -200 }}
             transition={{ duration: 0.8 }}
@@ -96,7 +135,14 @@ function FrontPage() {
             Chesshire
             <span className="dot">.</span>
           </motion.div>
-        </h1>
+        </motion.h1> */}
+
+        {/* <Marquee loop={0} gradient={false} direction="right">
+          <Banner firstName="Lucille" lastName="Chesshire" />
+        </Marquee> */}
+
+        <Banner firstName="Lucille" lastName="Chesshire" />
+
         <button className="work-cta">
           <a href="#works">My Work</a>
         </button>

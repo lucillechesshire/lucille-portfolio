@@ -111,3 +111,7 @@ input:checked ~ nav {
     }
   }
 }
+
+input#burger {
+  display: none;
+}

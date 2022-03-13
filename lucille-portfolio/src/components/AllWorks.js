@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SliderData } from "./SliderData";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -23,13 +23,7 @@ const slideInVariants = {
 const AllWorks = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
+
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -47,15 +41,14 @@ const AllWorks = ({ slides }) => {
   return (
     <section className="slider">
       <motion.div
-        ref={ref}
-        animate={controls}
+        whileInView="visible"
         initial="hidden"
         variants={spinInVariants}
         id="works"
       >
         <h2 className="my-projects-title">My Projects</h2>
-        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        <FaArrowLeft className="left-arrow" onClick={prevSlide} />
+        <FaArrowRight className="right-arrow" onClick={nextSlide} />
         {SliderData.map((slide, index) => {
           return (
             <div
