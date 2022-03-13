@@ -5,7 +5,7 @@ export const SliderData = [
   {
     key: 1,
     title: "Fruit Basket",
-    image: IMAGES.projImg1,
+    image: IMAGES.fbTile,
     slug: "javascript-game",
     description: "A card matching game for all ages",
     type: "Browser-based game",
@@ -44,7 +44,7 @@ export const SliderData = [
   {
     key: 2,
     title: "Film Town",
-    image: IMAGES.projImg2,
+    image: IMAGES.ftTile,
     slug: "movie-database",
     description: "A website consisting of an up-to-date movie library.",
     type: "Web Application",
@@ -79,7 +79,7 @@ export const SliderData = [
   {
     key: 3,
     title: "Raft Kings",
-    image: IMAGES.projImg3,
+    image: IMAGES.projImg4,
     slug: "capstone",
     summary: "",
     year: "2022",
@@ -98,16 +98,12 @@ export const SliderData = [
   {
     key: 4,
     title: "Personal Portfolio",
-    image: IMAGES.projImg4,
+    image: IMAGES.lcTile,
     slug: "portfolio",
     summary: "",
     year: "2022",
     skillsUsed: ["React", "SASS", "Adobe"],
-    components: [
-      "Framer Motion",
-      "React Router",
-      "Responisive Layout",
-    ],
+    components: ["Framer Motion", "React Router", "Responisive Layout"],
     design: "",
     development: "",
     colorBlocks: "",

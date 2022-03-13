@@ -13,12 +13,10 @@ function About() {
     <section id="about">
       <div className="all-about-me">
         <div className="my-tools">
-          <div className="line-deco"></div>
           <motion.div
             whileInView="visible"
             initial="hiddenRight"
             variants={slideInVariants}
-            // viewport={{ amount: 1 }}
             className="tools-list"
           >
             <h2>My Tools</h2>
@@ -50,7 +48,6 @@ function About() {
             </ul>
           </motion.div>
         </div>
-        <div className="line-deco"></div>
         <div className="about-blurbs">
           <motion.div
             whileInView="visible"

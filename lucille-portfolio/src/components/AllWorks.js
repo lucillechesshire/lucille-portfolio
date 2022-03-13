@@ -1,79 +1,74 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { SliderData } from "./SliderData";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import Slider from "react-slick";
+import { useMediaQuery } from "react-responsive";
 
-const spinInVariants = {
-  visible: {
-    opacity: 1,
-    transition: { duration: 2 },
-    rotateY: 0,
-  },
-  hidden: { opacity: 0, rotateY: 180 },
-};
+// const spinInVariants = {
+//   visible: {
+//     opacity: 1,
+//     transition: { duration: 2 },
+//     rotateY: 0,
+//   },
+//   hidden: { opacity: 0, rotateY: 180 },
+// };
 
-const slideInVariants = {
-  visible: { opacity: 1, transition: { duration: 2 }, x: 0 },
-  hiddenRight: { opacity: 0, x: 200 },
-  hiddenLeft: { opacity: 0, x: -200 },
-};
+// const slideInVariants = {
+//   visible: { opacity: 1, transition: { duration: 2 }, x: 0 },
+//   hiddenRight: { opacity: 0, x: 200 },
+//   hiddenLeft: { opacity: 0, x: -200 },
+// };
 
-const AllWorks = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+const AllWorks = () => {
+  const isTablet = useMediaQuery({
+    query: "(min-width: 800px)",
+  });
 
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+  const NextArrow = ({ onClick }) => {
+    return (
+      <div className="arrow next" onClick={onClick}>
+        <FaArrowRight />
+      </div>
+    );
   };
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <div className="arrow prev" onClick={onClick}>
+        <FaArrowLeft />
+      </div>
+    );
   };
 
-  console.log(current);
+  const [imageIndex, setImageIndex] = useState(0);
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
+  const settings = {
+    infinite: true,
+    lazyLoad: true,
+    dots: true,
+    speed: 300,
+    slidesToShow: isTablet ? 3 : 1,
+    centerMode: true,
+    centerPadding: 0,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    beforeChange: (current, next) => setImageIndex(next),
+  };
   return (
-    <section className="slider">
-      <motion.div
-        whileInView="visible"
-        initial="hidden"
-        variants={spinInVariants}
-        id="works"
-      >
-        <h2 className="my-projects-title">My Projects</h2>
-        <FaArrowLeft className="left-arrow" onClick={prevSlide} />
-        <FaArrowRight className="right-arrow" onClick={nextSlide} />
-        {SliderData.map((slide, index) => {
-          return (
-            <div
-              className={index === current ? "slide active" : "slide"}
-              key={index}
-            >
-              <Link to={`/${slide.slug}`}>
-                {index === current && (
-                  <img
-                    key={index}
-                    className="project-img"
-                    src={slide.image}
-                    alt=""
-                  />
-                )}
-              </Link>
-              <Link to={`/${slide.slug}`}>
-                {index === current && (
-                  <h3 className="project-title">{slide.title}</h3>
-                )}
-              </Link>
-            </div>
-          );
-        })}
-      </motion.div>
+    <section className="slider" id="works">
+      <h2>My Projects</h2>
+      <Slider {...settings}>
+        {SliderData.map((slider, index) => (
+          <div className={index === imageIndex ? "slide activeSlide" : "slide"}>
+            <Link to={`/${slider.slug}`} key={index}>
+              <img className="project-tile" src={slider.image} />
+              <h4 className="home-proj-title">{slider.title}</h4>
+            </Link>
+          </div>
+        ))}
+      </Slider>
     </section>
   );
 };

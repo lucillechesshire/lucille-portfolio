@@ -151,7 +151,7 @@ function FrontPage() {
       <div className="arrow bounce">
         <a className="fa fa-arrow-down fa-2x" href="#works"></a>
       </div>
-      <AllWorks slides={SliderData} />
+      <AllWorks/>
       <About />
       <Contact />
     </motion.div>
