@@ -34,9 +34,9 @@ export const SliderData = [
       "My first experience with JavaScript programming. Used my base knowledge of vanilla JavaScript to use the jQuery library to simplify DOM manipulation. Created multiple functions containing event handlers and loops to manage overall functionality and UX of the game.",
     colorBlocks: [
       { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
-      { block: COLORBLOCKS.lightBlueBlock, hex: "#02c5fe" },
-      { block: COLORBLOCKS.blackBlock, hex: "#000000" },
-      { block: COLORBLOCKS.pinkBlock, hex: "#eb50b4" },
+      { block: COLORBLOCKS.neonBlueBlock, hex: "#33b2f3" },
+      { block: COLORBLOCKS.redBlock, hex: "#fe525a" },
+      { block: COLORBLOCKS.greenBlock, hex: "#7ec32e" },
     ],
     mockup: "MOCKUPS",
   },
@@ -100,12 +100,27 @@ export const SliderData = [
     title: "Personal Portfolio",
     image: IMAGES.lcTile,
     slug: "portfolio",
-    summary: "",
+    description: "A collection of skills to showcase myself",
+    type: "Compilation of materials",
+    summary:
+      "Designed and built a personal portfolio to exemplify me and my work.",
     year: "2022",
     skillsUsed: ["React", "SASS", "Adobe"],
     components: ["Framer Motion", "React Router", "Responisive Layout"],
-    design: "",
-    development: "",
-    colorBlocks: "",
+    design:
+      "Decided upon a parallax style website for my personal portfolio. Began by creating a content plan and site map to organize content and plan UX/UI. Constructed wireframes as well as a roughly designed functioning prototype using Adobe XD. ",
+    sitePics: [
+      require("../assets/images/sitePics/movie-db/db-desk-home.png"),
+      require("../assets/images/sitePics/movie-db/db-desk-ind.png"),
+      require("../assets/images/sitePics/movie-db/db-desk-ab.png"),
+    ],
+    development:
+      "Used React to build a portfolio responsive on all screen sizes. Created an array of projects to later call using routes to display all my recent work. Imported React Hooks such as useState and useEffect to filter through data and output on its respective pages. Incorporated a large amount of animations and page transition using Framer Motion.",
+    colorBlocks: [
+      { block: COLORBLOCKS.creamBlock, hex: "#02c5fe" },
+      { block: COLORBLOCKS.blackBlock, hex: "#000000" },
+      { block: COLORBLOCKS.hotPinkBlock, hex: "#eb50b4" },
+      { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
+    ],
   },
 ];

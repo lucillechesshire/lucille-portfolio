@@ -25,11 +25,13 @@
   max-height: 250px;
   margin: 0 auto;
 }
+
 #single-works .color-block-img {
   display: block;
   max-width: 100px;
   max-height: 100px;
 }
+
 .colors-title {
   text-align: center;
 }
@@ -73,7 +75,6 @@ p.hex {
   display: block;
 }
 
-//Javascript Game //
 .javascript-game {
   background-color: #33b2f3;
   color: black;
@@ -83,17 +84,15 @@ p.hex {
   background-color: #02c5fe;
 }
 
-//Movie Database//
-
 .movie-database {
   background-color: black;
   color: white;
 }
 
-
 .portfolio {
   background-color: #fff;
 }
+
 .single-info {
   padding-top: 3rem;
   padding-bottom: 3rem;

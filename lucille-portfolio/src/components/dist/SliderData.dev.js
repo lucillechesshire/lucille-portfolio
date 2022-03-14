@@ -30,14 +30,14 @@ var SliderData = [{
     block: _colorBlocks["default"].whiteBlock,
     hex: "#ffffff"
   }, {
-    block: _colorBlocks["default"].lightBlueBlock,
-    hex: "#02c5fe"
+    block: _colorBlocks["default"].neonBlueBlock,
+    hex: "#33b2f3"
   }, {
-    block: _colorBlocks["default"].blackBlock,
-    hex: "#000000"
+    block: _colorBlocks["default"].redBlock,
+    hex: "#fe525a"
   }, {
-    block: _colorBlocks["default"].pinkBlock,
-    hex: "#eb50b4"
+    block: _colorBlocks["default"].greenBlock,
+    hex: "#7ec32e"
   }],
   mockup: "MOCKUPS"
 }, {
@@ -85,12 +85,27 @@ var SliderData = [{
   title: "Personal Portfolio",
   image: _images["default"].lcTile,
   slug: "portfolio",
-  summary: "",
+  description: "A collection of skills to showcase myself",
+  type: "Compilation of materials",
+  summary: "Designed and built a personal portfolio to exemplify me and my work.",
   year: "2022",
   skillsUsed: ["React", "SASS", "Adobe"],
   components: ["Framer Motion", "React Router", "Responisive Layout"],
-  design: "",
-  development: "",
-  colorBlocks: ""
+  design: "Decided upon a parallax style website for my personal portfolio. Began by creating a content plan and site map to organize content and plan UX/UI. Constructed wireframes as well as a roughly designed functioning prototype using Adobe XD. ",
+  sitePics: [require("../assets/images/sitePics/movie-db/db-desk-home.png"), require("../assets/images/sitePics/movie-db/db-desk-ind.png"), require("../assets/images/sitePics/movie-db/db-desk-ab.png")],
+  development: "Used React to build a portfolio responsive on all screen sizes. Created an array of projects to later call using routes to display all my recent work. Imported React Hooks such as useState and useEffect to filter through data and output on its respective pages. Incorporated a large amount of animations and page transition using Framer Motion.",
+  colorBlocks: [{
+    block: _colorBlocks["default"].creamBlock,
+    hex: "#02c5fe"
+  }, {
+    block: _colorBlocks["default"].blackBlock,
+    hex: "#000000"
+  }, {
+    block: _colorBlocks["default"].hotPinkBlock,
+    hex: "#eb50b4"
+  }, {
+    block: _colorBlocks["default"].whiteBlock,
+    hex: "#ffffff"
+  }]
 }];
 exports.SliderData = SliderData;

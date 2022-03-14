@@ -9,11 +9,13 @@ import FrontPage from "./sections/FrontPage";
 import { Routes } from "react-router-dom";
 import { Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   const location = useLocation();
   return (
     <div>
+      <CustomCursor />
       <Header />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>

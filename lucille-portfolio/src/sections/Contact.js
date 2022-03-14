@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import puzzle from "../assets/images/puzzles.png";
 
 const spinInVariants = {
   visible: {
@@ -12,26 +13,22 @@ const spinInVariants = {
 };
 
 function Contact() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
   return (
     <motion.section
-      ref={ref}
-      animate={controls}
+      whileInView="visible"
       initial="hidden"
       variants={spinInVariants}
       id="contact"
     >
-      <h2>Let's Work Together!</h2>
+      <div className="contact-container">
+        <h2>Let's Work Together!</h2>
+        <img className="puzzle" src={puzzle}></img>
+      </div>
       <p>
         I'm eager to help bring your ideas to life! If you are interested in
         collaborating or have any questions, please feel free to contact me.
       </p>
+
       <p className="email-btn">
         <a href="mailto:lucillec98@gmail.com">lucillec98@gmail.com</a>
       </p>

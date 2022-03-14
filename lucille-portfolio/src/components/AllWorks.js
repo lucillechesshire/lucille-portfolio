@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { useMediaQuery } from "react-responsive";
 
-// const spinInVariants = {
-//   visible: {
-//     opacity: 1,
-//     transition: { duration: 2 },
-//     rotateY: 0,
-//   },
-//   hidden: { opacity: 0, rotateY: 180 },
-// };
+const spinInVariants = {
+  visible: {
+    opacity: 1,
+    transition: { duration: 2 },
+    rotateY: 0,
+  },
+  hidden: { opacity: 0, rotateY: 180 },
+};
 
 // const slideInVariants = {
 //   visible: { opacity: 1, transition: { duration: 2 }, x: 0 },
@@ -57,7 +57,14 @@ const AllWorks = () => {
     beforeChange: (current, next) => setImageIndex(next),
   };
   return (
-    <section className="slider" id="works">
+    <motion.section
+      whileInView="visible"
+      initial="hidden"
+      variants={spinInVariants}
+      viewport={{ amount: 0.5 }}
+      className="slider"
+      id="works"
+    >
       <h2>My Projects</h2>
       <Slider {...settings}>
         {SliderData.map((slider, index) => (
@@ -69,7 +76,7 @@ const AllWorks = () => {
           </div>
         ))}
       </Slider>
-    </section>
+    </motion.section>
   );
 };
 

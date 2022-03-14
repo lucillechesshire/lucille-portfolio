@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+
 const slideInVariants = {
   visible: { opacity: 1, transition: { duration: 1.4 }, x: 0 },
   hiddenRight: { opacity: 0, x: 200 },
@@ -17,6 +18,7 @@ function About() {
             whileInView="visible"
             initial="hiddenRight"
             variants={slideInVariants}
+            viewport={{ amount: 0.3 }}
             className="tools-list"
           >
             <h2>My Tools</h2>
@@ -36,6 +38,7 @@ function About() {
             whileInView="visible"
             initial="hiddenLeft"
             variants={slideInVariants}
+            viewport={{ amount: 0.3 }}
             className="design-list"
           >
             <h3>Design Tools</h3>
@@ -53,6 +56,7 @@ function About() {
             whileInView="visible"
             initial="hiddenLeft"
             variants={slideInVariants}
+            viewport={{ amount: 0.3 }}
             className="about-skills"
           >
             <h2>Nice To Meet You</h2>
@@ -68,6 +72,7 @@ function About() {
             whileInView="visible"
             initial="hiddenRight"
             variants={slideInVariants}
+            viewport={{ amount: 0.2 }}
             className="about-me"
           >
             <p>
