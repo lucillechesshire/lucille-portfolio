@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import puzzle from "../assets/images/puzzles.png";
+import Particles from "../components/Particles";
 
-const spinInVariants = {
+const fadeInVariants = {
   visible: {
     opacity: 1,
     transition: { duration: 2 },
-    rotateY: 0,
   },
-  hidden: { opacity: 0, rotateY: 180 },
+  hidden: { opacity: 0 },
 };
 
 function Contact() {
@@ -17,7 +17,7 @@ function Contact() {
     <motion.section
       whileInView="visible"
       initial="hidden"
-      variants={spinInVariants}
+      variants={fadeInVariants}
       id="contact"
     >
       <div className="contact-container">

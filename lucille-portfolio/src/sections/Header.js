@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../assets/images/logo/luce-logo.png";
 import { HashLink } from "react-router-hash-link";
+import Particles from "../components/Particles";
 
 function Header() {
   const { pathname } = useLocation();
@@ -13,17 +14,32 @@ function Header() {
       <label for="burger" onClick={() => setIsOpen(!isOpen)}>
         <span
           style={{
-            background: pathname === "/movie-database" ? "white" : "black",
+            background:
+              pathname === "/movie-database" ||
+              pathname === "/javascript-game" ||
+              pathname === "/portfolio"
+                ? "white"
+                : "black",
           }}
         ></span>
         <span
           style={{
-            background: pathname === "/movie-database" ? "white" : "black",
+            background:
+              pathname === "/movie-database" ||
+              pathname === "/javascript-game" ||
+              pathname === "/portfolio"
+                ? "white"
+                : "black",
           }}
         ></span>
         <span
           style={{
-            background: pathname === "/movie-database" ? "white" : "black",
+            background:
+              pathname === "/movie-database" ||
+              pathname === "/javascript-game" ||
+              pathname === "/portfolio"
+                ? "white"
+                : "black",
           }}
         ></span>
       </label>
@@ -35,8 +51,10 @@ function Header() {
           backgroundColor: !isOpen
             ? "transparent"
             : pathname === "/javascript-game"
-            ? "#33b2f3"
+            ? "black"
             : pathname === "/movie-database"
+            ? "black"
+            : pathname === "/portfolio"
             ? "black"
             : "#f9f9f7",
         }}
@@ -49,7 +67,12 @@ function Header() {
             <HashLink
               to="/#works"
               style={{
-                color: pathname === "/movie-database" ? "white" : "black",
+                color:
+                  pathname === "/movie-database" ||
+                  pathname === "/javascript-game" ||
+                  pathname === "/portfolio"
+                    ? "white"
+                    : "black",
               }}
             >
               Works
@@ -59,7 +82,12 @@ function Header() {
             <HashLink
               to="/#about"
               style={{
-                color: pathname === "/movie-database" ? "white" : "black",
+                color:
+                  pathname === "/movie-database" ||
+                  pathname === "/javascript-game" ||
+                  pathname === "/portfolio"
+                    ? "white"
+                    : "black",
               }}
             >
               About
@@ -69,7 +97,12 @@ function Header() {
             <HashLink
               to="/#contact"
               style={{
-                color: pathname === "/movie-database" ? "white" : "black",
+                color:
+                  pathname === "/movie-database" ||
+                  pathname === "/javascript-game" ||
+                  pathname === "/portfolio"
+                    ? "white"
+                    : "black",
               }}
             >
               Contact

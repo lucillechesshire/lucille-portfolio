@@ -17,6 +17,12 @@
   justify-content: center;
   row-gap: 0.75rem;
   column-gap: 0.75rem;
+  @media (min-width: 800px) {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    padding-block: 2rem;
+  }
 }
 
 #single-works img {
@@ -24,11 +30,19 @@
   max-width: 250px;
   max-height: 250px;
   margin: 0 auto;
+  @media (min-width: 1000px) {
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 #single-works .color-block-img {
   display: block;
   max-width: 100px;
   max-height: 100px;
+  @media (min-width: 800px) {
+    max-width: 150px;
+    max-height: 150px;
+  }
 }
 .colors-title {
   text-align: center;
@@ -64,19 +78,40 @@ p.hex {
   left: 0.75rem;
 }
 
+.screenshot-container {
+  overflow: hidden;
+  height: 320px;
+  width: auto;
+  object-fit: cover;
+}
+
 #single-cover .screenshot {
-  filter: drop-shadow(0 0 0.75rem white);
+  // filter: drop-shadow(0 0 0.25rem white);
   padding-top: 2rem;
-  max-width: 250px;
-  margin: 0 auto;
-  text-align: center;
+  // max-width: 250px;
+  // margin: 0 auto;
+  // text-align: center;
   display: block;
+  max-width: unset;
+  max-height: unset;
+  transform: translateY(-10rem);
 }
 
 //Javascript Game //
-.javascript-game {
-  background-color: #33b2f3;
-  color: black;
+.javascript-game,
+.movie-database,
+.portfolio {
+  // background-color: #33b2f3;
+  // color: black;
+  background-color: black;
+  color: white;
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.356) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
 }
 
 .javascript-game .header {
@@ -85,15 +120,6 @@ p.hex {
 
 //Movie Database//
 
-.movie-database {
-  background-color: black;
-  color: white;
-}
-
-
-.portfolio {
-  background-color: #fff;
-}
 .single-info {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -135,4 +161,13 @@ p.hex {
 
 .colors-title {
   padding-top: 2rem;
+}
+
+section.screen-pic-container {
+  @media (min-width: 800px) {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    padding-block: 4rem;
+  }
 }

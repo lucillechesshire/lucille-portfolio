@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import Particles from "../components/Particles";
 
 const slideInVariants = {
   visible: { opacity: 1, transition: { duration: 1.4 }, x: 0 },
@@ -12,6 +12,7 @@ const slideInVariants = {
 function About() {
   return (
     <section id="about">
+      <Particles />
       <div className="all-about-me">
         <div className="my-tools">
           <motion.div
@@ -36,7 +37,7 @@ function About() {
           </motion.div>
           <motion.div
             whileInView="visible"
-            initial="hiddenLeft"
+            initial="hiddenRight"
             variants={slideInVariants}
             viewport={{ amount: 0.3 }}
             className="design-list"
@@ -68,9 +69,10 @@ function About() {
               with others to design the perfect digital experience!
             </p>
           </motion.div>
+          <Particles />
           <motion.div
             whileInView="visible"
-            initial="hiddenRight"
+            initial="hiddenLeft"
             variants={slideInVariants}
             viewport={{ amount: 0.2 }}
             className="about-me"

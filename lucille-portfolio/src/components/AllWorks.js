@@ -6,13 +6,12 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { useMediaQuery } from "react-responsive";
 
-const spinInVariants = {
+const fadeInVariants = {
   visible: {
     opacity: 1,
     transition: { duration: 2 },
-    rotateY: 0,
   },
-  hidden: { opacity: 0, rotateY: 180 },
+  hidden: { opacity: 0 },
 };
 
 // const slideInVariants = {
@@ -23,7 +22,7 @@ const spinInVariants = {
 
 const AllWorks = () => {
   const isTablet = useMediaQuery({
-    query: "(min-width: 800px)",
+    query: "(min-width: 700px)",
   });
 
   const NextArrow = ({ onClick }) => {
@@ -60,7 +59,7 @@ const AllWorks = () => {
     <motion.section
       whileInView="visible"
       initial="hidden"
-      variants={spinInVariants}
+      variants={fadeInVariants}
       viewport={{ amount: 0.5 }}
       className="slider"
       id="works"

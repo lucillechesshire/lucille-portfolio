@@ -24,6 +24,9 @@ nav {
 
 .logo {
   max-width: 45px;
+  @media (min-width: 700px) {
+    max-width: 60px;
+  }
 }
 
 input + label {
@@ -31,7 +34,7 @@ input + label {
   top: 40px;
   right: 40px;
   height: 20px;
-  width: 15px;
+  width: 35px;
   z-index: 5;
   span {
     position: absolute;
@@ -45,10 +48,10 @@ input + label {
     transition: 0.5s;
   }
   span:first-child {
-    top: 3px;
+    top: 0px;
   }
   span:last-child {
-    top: 16px;
+    top: 20px;
   }
 }
 label:hover {

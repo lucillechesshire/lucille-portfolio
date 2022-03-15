@@ -18,6 +18,21 @@
 
 .my-tools {
   padding: 1rem 0.5rem;
-  border-top: 1.5px solid black;
-  border-bottom: 1.5px solid black;
 }
+
+.tools-list,
+.design-list {
+  @media (min-width: 800px) {
+    width: 400px;
+    margin-left: auto;
+  }
+}
+
+.about-skills,
+.about-blurbs {
+  @media (min-width: 800px) {
+    width: 500px;
+  }
+}
+
+

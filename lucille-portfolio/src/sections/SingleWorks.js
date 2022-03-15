@@ -40,7 +40,9 @@ function SingleWorks() {
             <p className="proj-title">{project.title}</p>
             <h2>{project.description}</h2>
             <p>{project.type}</p>
-            <img className="screenshot" src={project.screenshot} />
+            <div className="screenshot-container">
+              <img className="screenshot" src={project.screenshot} />
+            </div>
             <div className="arrow bounce">
               <a className="fa fa-arrow-down fa-2x" href="#single-info"></a>
             </div>
@@ -134,15 +136,17 @@ function MoreInfo() {
             transition={{ duration: 0.5 }}
             className="design-div"
           >
-            <h3>Concept and Design</h3>
+            <h4>Concept and Design</h4>
             <p>{project.design}</p>
-            {project.sitePics.map((project, index) => (
-              <div key={index}>
-                <img className="screen-pics" src={project} />
-              </div>
-            ))}
+            <section className="screen-pic-container">
+              {project.sitePics.map((project, index) => (
+                <div key={index}>
+                  <img className="screen-pics" src={project} />
+                </div>
+              ))}
+            </section>
           </motion.div>
-          <h3 className="colors-title">Color Pallette</h3>
+          <h4 className="colors-title">Color Pallette</h4>
           <motion.div
             ref={ref}
             animate={controls}
@@ -168,7 +172,7 @@ function MoreInfo() {
             variants={slideInVariants}
             className="dev-div"
           >
-            <h3>Development</h3>
+            <h4>Development</h4>
             <p>{project.development}</p>
           </motion.div>
         </div>

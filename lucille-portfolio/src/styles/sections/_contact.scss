@@ -1,7 +1,12 @@
 section#contact {
   padding-top: 2rem;
   padding-bottom: 4rem;
-  background-color: #fff;
+
+  @media (min-width: 700px) {
+    padding-top: 4rem;
+    width: 700px;
+    margin-left: auto;
+  }
 }
 
 .email-btn {

@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import Banner from "../components/Banner.js";
 import Marquee from "react-fast-marquee";
 
+
 const container = {
   show: {
     transition: {

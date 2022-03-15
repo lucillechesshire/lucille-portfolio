@@ -5,11 +5,11 @@ export const SliderData = [
   {
     key: 1,
     title: "Fruit Basket",
-    image: IMAGES.fbTile,
+    image: IMAGES.games,
     slug: "javascript-game",
     description: "A card matching game for all ages",
     type: "Browser-based game",
-    screenshot: require("../assets/images/screenshots/fruitbasket-screenshot.png"),
+    screenshot: IMAGES.games,
     summary:
       "Designed and built an interactive card matching game using jQuery, HTML and CSS.",
     year: "2021",
@@ -44,11 +44,11 @@ export const SliderData = [
   {
     key: 2,
     title: "Film Town",
-    image: IMAGES.ftTile,
+    image: IMAGES.movieTown,
     slug: "movie-database",
     description: "A website consisting of an up-to-date movie library.",
     type: "Web Application",
-    screenshot: require("../assets/images/screenshots/filmtown-screenshot.png"),
+    screenshot: IMAGES.movieTown,
     summary:
       "Collaborated with two team members to develop a fully responsive movie database application using React and SASS.",
     year: "2021",
@@ -79,7 +79,7 @@ export const SliderData = [
   {
     key: 3,
     title: "Raft Kings",
-    image: IMAGES.projImg4,
+    image: IMAGES.rafting,
     slug: "capstone",
     summary: "",
     year: "2022",
@@ -98,10 +98,11 @@ export const SliderData = [
   {
     key: 4,
     title: "Personal Portfolio",
-    image: IMAGES.lcTile,
+    image: IMAGES.profile,
     slug: "portfolio",
     description: "A collection of skills to showcase myself",
     type: "Compilation of materials",
+    screenshot: IMAGES.profile,
     summary:
       "Designed and built a personal portfolio to exemplify me and my work.",
     year: "2022",
