@@ -13,7 +13,16 @@ h3.project-title {
 
 .slider {
   margin-inline: auto;
-  padding-block: 10rem;
+  padding-block: 8rem;
+  background-color: black;
+  color: white;
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.356) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
 }
 
 .slide img {
@@ -47,6 +56,7 @@ h3.project-title {
   position: absolute;
   cursor: pointer;
   z-index: 10;
+  color: white;
 }
 
 .arrow svg {
@@ -82,8 +92,9 @@ h3.project-title {
 
 .home-proj-title {
   text-align: center;
-  color: black;
+  color: white;
   margin-top: 1rem;
+  mix-blend-mode: difference;
 }
 
 .project-tile {
@@ -94,4 +105,14 @@ h3.project-title {
 
 .slick-list {
   overflow: visible;
+}
+
+.slick-dots li button:before {
+  color: #ff0084;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  mix-blend-mode: difference;
 }

@@ -74,7 +74,7 @@ function CustomCursor() {
   }, []);
 
   return (
-    <div>
+    <div className="cursor-container">
       <div className="main-cursor" ref={mainCursor}></div>
       <div className="second-cursor" ref={secondCursor}></div>
     </div>

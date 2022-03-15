@@ -19,7 +19,7 @@ function Header() {
               pathname === "/javascript-game" ||
               pathname === "/portfolio"
                 ? "white"
-                : "black",
+                : "white",
           }}
         ></span>
         <span
@@ -29,7 +29,7 @@ function Header() {
               pathname === "/javascript-game" ||
               pathname === "/portfolio"
                 ? "white"
-                : "black",
+                : "white",
           }}
         ></span>
         <span
@@ -39,7 +39,7 @@ function Header() {
               pathname === "/javascript-game" ||
               pathname === "/portfolio"
                 ? "white"
-                : "black",
+                : "white",
           }}
         ></span>
       </label>

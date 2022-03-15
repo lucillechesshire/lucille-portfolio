@@ -3,7 +3,7 @@
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  border: 1px solid black;
+  border: 1px solid white;
   pointer-events: none;
   // overflow: hidden;
   transform: translate(0, 0, 0);
@@ -16,7 +16,12 @@
   transform: translate(0, 0, 0);
   z-index: 10000;
   pointer-events: none;
-  border: solid 1px black;
+  border: solid 1px white;
   border-radius: 50%;
-  background-color: black;
+  background-color: white;
+}
+
+.cursor-container {
+  mix-blend-mode: difference;
+  // z-index: 2000;
 }
