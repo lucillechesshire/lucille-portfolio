@@ -83,6 +83,7 @@ p.hex {
   height: 320px;
   width: auto;
   object-fit: cover;
+  mix-blend-mode: difference;
 }
 
 #single-cover .screenshot {
