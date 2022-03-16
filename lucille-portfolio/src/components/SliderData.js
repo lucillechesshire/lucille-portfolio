@@ -3,7 +3,7 @@ import COLORBLOCKS from "../assets/images/colorBlocks";
 
 export const SliderData = [
   {
-    key: 1,
+    id: 1,
     title: "Fruit Basket",
     image: IMAGES.games,
     slug: "javascript-game",
@@ -42,7 +42,7 @@ export const SliderData = [
   },
 
   {
-    key: 2,
+    id: 2,
     title: "Film Town",
     image: IMAGES.movieTown,
     slug: "movie-database",
@@ -77,7 +77,7 @@ export const SliderData = [
   },
 
   {
-    key: 3,
+    id: 3,
     title: "Raft Kings",
     image: IMAGES.rafting,
     slug: "capstone",
@@ -96,7 +96,7 @@ export const SliderData = [
   },
 
   {
-    key: 4,
+    id: 4,
     title: "Personal Portfolio",
     image: IMAGES.profile,
     slug: "portfolio",

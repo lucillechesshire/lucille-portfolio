@@ -2,6 +2,10 @@
   padding: 0;
 }
 
+// section#single-info {
+//   padding-inline: 0;
+// }
+
 #single-works h4,
 #single-works h3 {
   font-family: "Birdy";
@@ -44,9 +48,9 @@
     max-height: 150px;
   }
 }
-.colors-title {
-  text-align: center;
-}
+// .colors-title {
+//   text-align: center;
+// }
 
 p.hex {
   text-align: center;
@@ -123,7 +127,6 @@ p.hex {
 
 .single-info {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   background-color: #f9f9f7;
 }
 
@@ -162,6 +165,7 @@ p.hex {
 
 .colors-title {
   padding-top: 2rem;
+  text-align: center;
 }
 
 section.screen-pic-container {
@@ -175,4 +179,36 @@ section.screen-pic-container {
 
 .next-project {
   background-color: #fff;
+}
+
+.see-other-projects {
+  background-color: black;
+  color: white;
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.356) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
+  padding-block: 1rem;
+  @media (min-width: 600px) {
+    margin-top: 5rem;
+    padding-top: 0rem;
+  }
+}
+
+.see-other-projects h4 {
+  @media (min-width: 600px) {
+    text-align: center;
+  }
+}
+
+.see-other-projects ul {
+  @media (min-width: 600px) {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }

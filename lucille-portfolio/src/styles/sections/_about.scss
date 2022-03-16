@@ -18,21 +18,25 @@
 
 .my-tools {
   padding: 1rem 0.5rem;
+  @media (min-width: 1000px) {
+    margin-right: 3.5rem;
+  }
 }
 
 .tools-list,
 .design-list {
-  @media (min-width: 800px) {
-    width: 400px;
+  @media (min-width: 1000px) {
+    width: 440px;
     margin-left: auto;
+    margin-right: 3.5rem;
   }
 }
 
 .about-skills,
-.about-blurbs {
-  @media (min-width: 800px) {
-    width: 500px;
+.about-blurbs,
+.about-me {
+  @media (min-width: 1000px) {
+    width: 745px;
+    margin-left: 3.5rem;
   }
 }
-
-

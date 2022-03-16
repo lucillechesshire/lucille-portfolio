@@ -3,6 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 import logo from "../assets/images/logo/luce-logo.png";
 import { HashLink } from "react-router-hash-link";
 import Particles from "../components/Particles";
+import { motion } from "framer-motion";
 
 function Header() {
   const { pathname } = useLocation();
@@ -60,9 +61,19 @@ function Header() {
         }}
       >
         <Link to="/">
-          <img className="logo" src={logo}></img>
+          <motion.img
+            whileHover={{
+              scale: 1.1,
+              rotate: -15,
+            }}
+            className="logo"
+            src={logo}
+          ></motion.img>
         </Link>
-        <ul onClick={() => setIsOpen(!isOpen)}>
+        <ul
+          style={{ pointerEvents: !isOpen ? "none" : "auto" }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <li>
             <HashLink
               to="/#works"

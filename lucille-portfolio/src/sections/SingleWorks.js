@@ -5,6 +5,7 @@ import { SliderData } from "../components/SliderData";
 import { Link } from "react-scroll";
 import { useAnimation, motion } from "framer-motion";
 import InView, { useInView } from "react-intersection-observer";
+import Marquee from "react-fast-marquee";
 
 const slideInVariants = {
   visible: { opacity: 1, transition: { duration: 2 }, x: 0 },
@@ -36,7 +37,7 @@ function SingleWorks() {
     <section className="single-works" id="single-works">
       {project !== null && (
         <div>
-          <section className={slug} id="single-cover">
+          <section className={`${slug} padding`} id="single-cover">
             <p className="proj-title">{project.title}</p>
             <h2>{project.description}</h2>
             <p>{project.type}</p>
@@ -52,24 +53,24 @@ function SingleWorks() {
               whileInView="visible"
               initial="hiddenRight"
               variants={slideInVariants}
-              className="overview"
+              className="overview padding"
             >
               <h4>Overview</h4>
 
               <p>{project.summary}</p>
             </motion.div>
-            <div className="year-skills-components">
+            <div className="year-skills-components padding">
               <motion.div
                 whileInView="visible"
                 initial="hiddenLeft"
                 variants={slideInVariants}
-                className="year-skills"
+                className="year-skills padding"
               >
-                <div className="year">
+                <div className="year padding">
                   <h4>Year</h4>
                   <p>{project.year}</p>
                 </div>
-                <div className="skills-list">
+                <div className="skills-list padding">
                   <h4>Skills</h4>
                   <ul>
                     {project.skillsUsed.map((project, index) => (
@@ -92,13 +93,21 @@ function SingleWorks() {
                 </ul>
               </motion.div>
             </div>
-            <a
-              className="see-more-btn"
-              href="#see-more-project"
-              onClick={() => setIsVisible(!isVisible)}
+            <motion.span
+              className="padding"
+              style={{ display: "inline-block" }}
+              whileHover={{
+                scale: 1.1,
+              }}
             >
-              {isVisible ? "See Less " : "See More"}
-            </a>
+              <a
+                className="see-more-btn"
+                href="#see-more-project"
+                onClick={() => setIsVisible(!isVisible)}
+              >
+                {isVisible ? "See Less " : "See More"}
+              </a>
+            </motion.span>
             {isVisible ? <MoreInfo /> : ""}
           </section>
         </div>
@@ -135,11 +144,11 @@ function MoreInfo() {
             animate={{ scaleX: 1 }}
             exit={{ scaleX: 0 }}
             transition={{ duration: 0.5 }}
-            className="design-div"
+            className="design-div padding"
           >
             <h4>Concept and Design</h4>
             <p>{project.design}</p>
-            <section className="screen-pic-container">
+            <section className="screen-pic-container padding">
               {project.sitePics.map((project, index) => (
                 <div key={index}>
                   <img className="screen-pics" src={project} />
@@ -173,9 +182,34 @@ function MoreInfo() {
             variants={slideInVariants}
             className="dev-div"
           >
-            <h4>Development</h4>
-            <p>{project.development}</p>
+            <h4 className="padding">Development</h4>
+            <p className="padding">{project.development}</p>
           </motion.div>
+          <div className="see-other-projects">
+            <Marquee loop={0} gradient={false} speed={60}>
+              <h4>Links to other projects</h4>
+            </Marquee>
+            <ul className="padding">
+              {SliderData.map((project, index) => (
+                <motion.li
+                  whileHover={{
+                    scale: 1.2,
+                  }}
+                  key={index}
+                >
+                  <motion.a
+                    style={{ color: "white" }}
+                    whileHover={{
+                      color: "#ff0084",
+                    }}
+                    href={`/${project.slug}`}
+                  >
+                    {project.title}
+                  </motion.a>
+                </motion.li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </div>

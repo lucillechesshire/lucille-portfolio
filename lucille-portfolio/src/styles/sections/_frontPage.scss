@@ -37,7 +37,7 @@ h1.name-title {
     font-size: 3.2rem;
   }
 
-  @media (min-width: 1080px) {
+  @media (min-width: 1200px) {
     font-size: 4.5rem;
   }
 }
@@ -66,6 +66,8 @@ span.dot {
   text-transform: uppercase;
   font-size: 2.2rem;
   position: absolute;
+  font-family: "Fira Sans Condensed", sans-serif;
+  letter-spacing: 7px;
 
   @media (min-width: 700px) {
     font-size: 2.5rem;
@@ -89,6 +91,13 @@ span.dot {
   left: 6vw;
   @media (min-width: 700px) {
     top: 24.5rem;
+  }
+
+  @media (min-width: 950px) {
+    top: 25.5rem;
+  }
+  @media (min-width: 1200px) {
+    top: 27.5rem;
   }
 }
 
@@ -127,12 +136,9 @@ span.dot {
     bottom: 8.5rem;
   }
 
-  @media (min-width: 950px) {
+  @media (min-width: 1000px) {
     padding: 1rem;
   }
-}
-
-.work-cta:hover {
 }
 
 //....Arrow Styles....//

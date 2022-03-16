@@ -1,3 +1,14 @@
+section.slider {
+  padding-inline: 0;
+}
+
+.selected-works {
+  @media (min-width: 800px) {
+    text-align: center;
+    padding-bottom: 4.8rem;
+  }
+}
+
 h3.project-title {
   text-align: center;
   padding: 1rem 0 0.25rem 0;
@@ -5,10 +16,13 @@ h3.project-title {
 
 .my-projects-title {
   margin-top: 2rem;
+  mix-blend-mode: difference;
+
   @media (min-width: 1000px) {
     margin-top: 3.5rem;
   }
 }
+
 //.....Works Gallery Slider....//
 
 .slider {
@@ -117,5 +131,9 @@ h3.project-title {
 
 .slick-dots li.slick-active button:before {
   color: white;
+  mix-blend-mode: difference;
+}
+
+.works-marquee {
   mix-blend-mode: difference;
 }

@@ -3,6 +3,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import puzzle from "../assets/images/puzzles.png";
 import Particles from "../components/Particles";
+import Marquee from "react-fast-marquee";
 
 const fadeInVariants = {
   visible: {
@@ -20,18 +21,37 @@ function Contact() {
       variants={fadeInVariants}
       id="contact"
     >
-      <div className="contact-container">
+      <Marquee
+        loop={0}
+        gradient={false}
+        speed={60}
+        className="together-marquee"
+      >
         <h2>Let's Work Together!</h2>
-        <img className="puzzle" src={puzzle}></img>
+      </Marquee>
+      <div className="contact-container">
+        <p>
+          I'm eager to help bring your ideas to life! If you are interested in
+          collaborating or have any questions, please feel free to contact me.
+        </p>
+        <p>
+          <motion.a
+            className="email-btn"
+            whileHover={{
+              scale: 1.1,
+              rotate: -15,
+              loop: 0,
+              backgroundColor: "white",
+              mixBlendMode: "difference",
+              color: "#ff0084",
+            }}
+            href="mailto:lucillec98@gmail.com"
+          >
+            Email Me
+          </motion.a>
+        </p>
+        {/* <img className="puzzle" src={puzzle}></img> */}
       </div>
-      <p>
-        I'm eager to help bring your ideas to life! If you are interested in
-        collaborating or have any questions, please feel free to contact me.
-      </p>
-
-      <p className="email-btn">
-        <a href="mailto:lucillec98@gmail.com">lucillec98@gmail.com</a>
-      </p>
     </motion.section>
   );
 }

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { useMediaQuery } from "react-responsive";
+import Marquee from "react-fast-marquee";
 
 const fadeInVariants = {
   visible: {
@@ -64,12 +65,20 @@ const AllWorks = () => {
       className="slider"
       id="works"
     >
-      <h2>My Projects</h2>
+      <Marquee className="works-marquee" loop={0} gradient={false} speed={60}>
+        <h2 className="selected-works">Selected Works</h2>
+      </Marquee>
       <Slider {...settings}>
         {SliderData.map((slider, index) => (
           <div className={index === imageIndex ? "slide activeSlide" : "slide"}>
             <Link to={`/${slider.slug}`} key={index}>
-              <img className="project-tile" src={slider.image} />
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                }}
+                className="project-tile"
+                src={slider.image}
+              />
               <h4 className="home-proj-title">{slider.title}</h4>
             </Link>
           </div>

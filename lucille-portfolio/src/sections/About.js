@@ -3,6 +3,14 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Particles from "../components/Particles";
 
+const fadeInVariants = {
+  visible: {
+    opacity: 1,
+    transition: { duration: 2 },
+  },
+  hidden: { opacity: 0 },
+};
+
 const slideInVariants = {
   visible: { opacity: 1, transition: { duration: 1.4 }, x: 0 },
   hiddenRight: { opacity: 0, x: 200 },
@@ -11,7 +19,13 @@ const slideInVariants = {
 
 function About() {
   return (
-    <section id="about">
+    <section
+      whileInView="visible"
+      initial="hidden"
+      variants={fadeInVariants}
+      viewport={{ amount: 0.5 }}
+      id="about"
+    >
       <Particles />
       <div className="all-about-me">
         <div className="my-tools">
@@ -60,7 +74,7 @@ function About() {
             viewport={{ amount: 0.3 }}
             className="about-skills"
           >
-            <h2>Nice To Meet You</h2>
+            <h2>Get to know me</h2>
             <p>
               I'm a front-end web developer and designer based in Vancouver. I
               pride myself in constructing clean and precise code, as well as

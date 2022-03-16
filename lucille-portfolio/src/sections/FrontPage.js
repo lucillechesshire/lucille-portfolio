@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import Banner from "../components/Banner.js";
 import Marquee from "react-fast-marquee";
 
-
 const container = {
   show: {
     transition: {
@@ -51,7 +50,7 @@ function FrontPage() {
       className="home"
       id="home"
     >
-      <section className="title-container">
+      <section className="title-container padding">
         <motion.div
           variants={container}
           initial="hidden"
@@ -144,15 +143,20 @@ function FrontPage() {
 
         <Banner firstName="Lucille" lastName="Chesshire" />
 
-        <button className="work-cta">
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+          }}
+          className="work-cta"
+        >
           <a href="#works">My Work</a>
-        </button>
+        </motion.button>
       </section>
 
       <div className="arrow bounce">
         <a className="fa fa-arrow-down fa-2x" href="#works"></a>
       </div>
-      <AllWorks/>
+      <AllWorks />
       <About />
       <Contact />
     </motion.div>
