@@ -62,6 +62,7 @@ function Header() {
       >
         <Link to="/">
           <motion.img
+            onClick={() => setIsOpen(false)}
             whileHover={{
               scale: 1.1,
               rotate: -15,

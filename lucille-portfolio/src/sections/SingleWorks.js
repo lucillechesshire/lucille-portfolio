@@ -34,7 +34,14 @@ function SingleWorks() {
   }, [slug]);
 
   return (
-    <section className="single-works" id="single-works">
+    <motion.section
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      exit={{ scaleX: 0 }}
+      transition={{ duration: 0.5 }}
+      className="single-works"
+      id="single-works"
+    >
       {project !== null && (
         <div>
           <section className={`${slug} padding`} id="single-cover">
@@ -112,7 +119,7 @@ function SingleWorks() {
           </section>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 }
 

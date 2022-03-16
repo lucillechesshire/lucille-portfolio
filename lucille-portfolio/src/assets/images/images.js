@@ -8,6 +8,8 @@ const IMAGES = {
   profile: require("../project-tiles/profile.png"),
   movieTown: require("../project-tiles/movie-town.png"),
   rafting: require("../project-tiles/rafting.png"),
+  fbNeon: require("../project-tiles/fruitbasket-neon.png"),
+  dbNeon: require("../project-tiles/moviedb-neon.png"),
 };
 
 export default IMAGES;

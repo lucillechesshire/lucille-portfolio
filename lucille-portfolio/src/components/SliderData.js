@@ -5,11 +5,12 @@ export const SliderData = [
   {
     id: 1,
     title: "Fruit Basket",
-    image: IMAGES.games,
+    // image: IMAGES.games,
+    image: IMAGES.fbNeon,
     slug: "javascript-game",
     description: "A card matching game for all ages",
     type: "Browser-based game",
-    screenshot: IMAGES.games,
+    screenshot: IMAGES.fbNeon,
     summary:
       "Designed and built an interactive card matching game using jQuery, HTML and CSS.",
     year: "2021",
