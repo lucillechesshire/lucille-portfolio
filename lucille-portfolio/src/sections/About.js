@@ -27,7 +27,7 @@ function About() {
       id="about"
     >
       <Particles />
-      <div className="all-about-me">
+      <div className="all-about-me padding">
         <div className="my-tools">
           <motion.div
             whileInView="visible"

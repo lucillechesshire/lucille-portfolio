@@ -22,6 +22,7 @@ function Contact() {
       id="contact"
     >
       <Marquee
+        pauseOnHover={true}
         loop={0}
         gradient={false}
         speed={60}

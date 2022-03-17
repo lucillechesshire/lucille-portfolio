@@ -65,7 +65,13 @@ const AllWorks = () => {
       className="slider"
       id="works"
     >
-      <Marquee className="works-marquee" loop={0} gradient={false} speed={60}>
+      <Marquee
+        className="works-marquee"
+        pauseOnHover={true}
+        loop={0}
+        gradient={false}
+        speed={60}
+      >
         <h2 className="selected-works">Selected Works</h2>
       </Marquee>
       <Slider {...settings}>

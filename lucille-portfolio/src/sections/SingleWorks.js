@@ -155,6 +155,16 @@ function MoreInfo() {
           >
             <h4>Concept and Design</h4>
             <p>{project.design}</p>
+            {project.sitePicsMobile && (
+              <section className="mobile-container screen-pic-container">
+                {project.sitePicsMobile.map((project, index) => (
+                  <div key={index}>
+                    <img className="screen-pics" src={project} />
+                  </div>
+                ))}
+              </section>
+            )}
+
             <section className="screen-pic-container padding">
               {project.sitePics.map((project, index) => (
                 <div key={index}>

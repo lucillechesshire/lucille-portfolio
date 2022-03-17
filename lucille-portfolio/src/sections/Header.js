@@ -76,48 +76,57 @@ function Header() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <li>
-            <HashLink
-              to="/#works"
-              style={{
-                color:
-                  pathname === "/movie-database" ||
-                  pathname === "/javascript-game" ||
-                  pathname === "/portfolio"
-                    ? "white"
-                    : "black",
-              }}
-            >
-              Works
+            <HashLink to="/#works">
+              <motion.span
+                style={{
+                  display: "inline-block",
+                  color:
+                    pathname === "/movie-database" ||
+                    pathname === "/javascript-game" ||
+                    pathname === "/portfolio"
+                      ? "white"
+                      : "black",
+                }}
+                whileHover={{ scale: 1.2, color: "#ff0084" }}
+              >
+                Works
+              </motion.span>
             </HashLink>
           </li>
           <li>
-            <HashLink
-              to="/#about"
-              style={{
-                color:
-                  pathname === "/movie-database" ||
-                  pathname === "/javascript-game" ||
-                  pathname === "/portfolio"
-                    ? "white"
-                    : "black",
-              }}
-            >
-              About
+            <HashLink to="/#about">
+              <motion.span
+                style={{
+                  display: "inline-block",
+                  color:
+                    pathname === "/movie-database" ||
+                    pathname === "/javascript-game" ||
+                    pathname === "/portfolio"
+                      ? "white"
+                      : "black",
+                }}
+                whileHover={{ scale: 1.2, color: "#ff0084" }}
+              >
+                About
+              </motion.span>
             </HashLink>
           </li>
           <li>
-            <HashLink
-              to="/#contact"
-              style={{
-                color:
-                  pathname === "/movie-database" ||
-                  pathname === "/javascript-game" ||
-                  pathname === "/portfolio"
-                    ? "white"
-                    : "black",
-              }}
-            >
-              Contact
+            <HashLink to="/#contact">
+              <motion.span
+                style={{
+                  display: "inline-block",
+                  color:
+                    pathname === "/movie-database" ||
+                    pathname === "/javascript-game" ||
+                    pathname === "/portfolio"
+                      ? "white"
+                      : "black",
+                }}
+                whileHover={{ scale: 1.2, color: "#ff0084" }}
+              >
+                Contact
+              </motion.span>
             </HashLink>
           </li>
         </ul>
