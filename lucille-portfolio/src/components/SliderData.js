@@ -61,14 +61,14 @@ export const SliderData = [
       "Responisive Layout",
     ],
     design:
-      "Started out by creating a high-fidelity mock-up using Adobe XD to come up with the overall design and functionality of website. Decided upon using black as the primary colour to accentuate the blue and white secondary colours and give prominence to the visual content. Styled using SASS through a mobile-first approach, making this application responsive for all screen sizes.",
+      "Started out by creating a high-fidelity mock-up using Adobe XD to come up with the overall design and functionality of website. Decided upon using black as the primary colour to accentuate the blue and white secondary colours and give prominence to the visually prevailing content. Styled using SASS through a mobile-first approach, making this application responsive for all screen sizes.",
     sitePics: [
       require("../assets/images/sitePics/movie-db/db-desk-home.png"),
       require("../assets/images/sitePics/movie-db/db-desk-ind.png"),
       require("../assets/images/sitePics/movie-db/db-desk-ab.png"),
     ],
     development:
-      "Set up files and planned components to set up a usable interface. Worked with Rest API to pull data from The Movie DB to obtain up-to-date movie data for this application, including top rated, popular, and upcoming movies. Set up localStorage to allow for saving functionality in the browser, which granted user to dynamically add movies to their favourites.",
+      "Set up files and planned components to set up a usable interface. Worked with Rest API to pull data from The Movie DB to obtain up-to-date movie data for this application, including top rated, popular, and upcoming movies. Set up localStorage to allow for saving functionality in the browser, granting users to dynamically add movies to their favourites.",
     colorBlocks: [
       { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
       { block: COLORBLOCKS.lightBlueBlock, hex: "#02c5fe" },
