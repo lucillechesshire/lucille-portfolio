@@ -14,10 +14,11 @@ const IMAGES = {
   ftGradTile: require("../project-tiles/ftGradTile.png"),
   fbDark: require("../project-tiles/fbTileDark.png"),
   river: require("../project-tiles/rafting-water.jpg"),
-  grapes: require("../project-tiles/grapes3.png"),
+  melon: require("../project-tiles/watermelon.png"),
   girl: require("../project-tiles/me-laptop3.png"),
-  filmRoll: require("../project-tiles/filled-film2.png"),
+  filmRoll: require("../project-tiles/filled-film3.png"),
   neonRaft: require("../project-tiles/filled-rafts.png"),
+  calcTile: require("../project-tiles/calc2.png"),
 };
 
 export default IMAGES;

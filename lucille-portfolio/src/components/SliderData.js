@@ -5,12 +5,11 @@ export const SliderData = [
   {
     id: 1,
     title: "Fruit Basket",
-    // image: IMAGES.games,
-    image: IMAGES.grapes,
+    image: IMAGES.melon,
     slug: "javascript-game",
     description: "A card matching game for all ages",
     type: "Browser-based game",
-    screenshot: IMAGES.grapes,
+    screenshot: IMAGES.melon,
     summary:
       "Designed and built an interactive card matching game using jQuery, HTML and CSS.",
     year: "2021",
@@ -82,6 +81,9 @@ export const SliderData = [
     title: "Raft Kings",
     image: IMAGES.neonRaft,
     slug: "capstone",
+    description: "A website consisting of an up-to-date movie library.",
+    type: "Web Application",
+    screenshot: IMAGES.neonRaft,
     summary: "",
     year: "2022",
     skillsUsed: ["React", "SASS", "Adobe"],
@@ -124,5 +126,37 @@ export const SliderData = [
       { block: COLORBLOCKS.hotPinkBlock, hex: "#eb50b4" },
       { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
     ],
+  },
+  {
+    id: 6,
+    title: "Calculator",
+    image: IMAGES.calcTile,
+    slug: "calculator",
+    description: "A fully functioning calculator to perform basic operations",
+    type: "Browser-based application",
+    screenshot: IMAGES.calcTile,
+    summary:
+      "My introduction to React. Designed and built a fully operative calculator using OOP and React Library.",
+    year: "2021",
+    skillsUsed: ["HTML", "CSS", "React", "JavaScript"],
+    components: [
+      "AC/C Keys",
+      "0-9 Number Keys",
+      "+, -, /, x, and = Keys",
+      "Display Screen",
+      "OOP Programming",
+    ],
+    design:
+      "Not much planning went into the design process as I created this primarily to learn basic functionality of the React Library. A basic black and white color scheme for the calculator as well as a light blue for the background color of the application.",
+    sitePics: [require("../assets/images/sitePics/calculator/calculator.png")],
+    development:
+      "My first time developing an app using the React Library. Used the Object-Oriented Programming model to pull in data for my buttons to later call in to other components. My introductory to built-in and primitive react Hooks such as useState, as well as creating components whilst passing through its respective props to render out the appropriate information.",
+    colorBlocks: [
+      { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
+      { block: COLORBLOCKS.neonBlueBlock, hex: "#33b2f3" },
+      { block: COLORBLOCKS.redBlock, hex: "#fe525a" },
+      { block: COLORBLOCKS.greenBlock, hex: "#7ec32e" },
+    ],
+    mockup: "MOCKUPS",
   },
 ];

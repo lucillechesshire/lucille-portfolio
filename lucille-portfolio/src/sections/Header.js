@@ -2,23 +2,29 @@ import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../assets/images/logo/luce-logo.png";
 import { HashLink } from "react-router-hash-link";
-import Particles from "../components/Particles";
+// import Particles from "../components/Particles";
 import { motion } from "framer-motion";
 
-function Header() {
+function Header({ isOpen, setIsOpen }) {
   const { pathname } = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <input id="burger" type="checkbox" checked={isOpen ? true : false} />
+      <input
+        id="burger"
+        type="checkbox"
+        checked={isOpen ? true : false}
+        readOnly={true}
+      />
 
-      <label for="burger" onClick={() => setIsOpen(!isOpen)}>
+      <label htmlFor="burger" onClick={() => setIsOpen(!isOpen)}>
         <span
           style={{
             background:
               pathname === "/movie-database" ||
               pathname === "/javascript-game" ||
-              pathname === "/portfolio"
+              pathname === "/portfolio" ||
+              pathname === "/calculator"
                 ? "white"
                 : "white",
           }}
@@ -28,9 +34,10 @@ function Header() {
             background:
               pathname === "/movie-database" ||
               pathname === "/javascript-game" ||
-              pathname === "/portfolio"
-                ? "white"
-                : "white",
+              pathname === "/portfolio" ||
+              pathname === "/calculator"
+                ? "#ffffff"
+                : "#ffffff",
           }}
         ></span>
         <span
@@ -38,9 +45,10 @@ function Header() {
             background:
               pathname === "/movie-database" ||
               pathname === "/javascript-game" ||
-              pathname === "/portfolio"
-                ? "white"
-                : "white",
+              pathname === "/portfolio" ||
+              pathname === "/calculator"
+                ? "#ffffff"
+                : "#ffffff",
           }}
         ></span>
       </label>
@@ -52,11 +60,13 @@ function Header() {
           backgroundColor: !isOpen
             ? "transparent"
             : pathname === "/javascript-game"
-            ? "black"
+            ? "#000000"
             : pathname === "/movie-database"
-            ? "black"
+            ? "#000000"
             : pathname === "/portfolio"
-            ? "black"
+            ? "#000000"
+            : pathname === "/calculator"
+            ? "#000000"
             : "#f9f9f7",
         }}
       >
@@ -83,9 +93,10 @@ function Header() {
                   color:
                     pathname === "/movie-database" ||
                     pathname === "/javascript-game" ||
-                    pathname === "/portfolio"
-                      ? "white"
-                      : "black",
+                    pathname === "/portfolio" ||
+                    pathname === "/calculator"
+                      ? "#ffffff"
+                      : "#000000",
                 }}
                 whileHover={{ scale: 1.2, color: "#ff0084" }}
               >
@@ -101,9 +112,10 @@ function Header() {
                   color:
                     pathname === "/movie-database" ||
                     pathname === "/javascript-game" ||
-                    pathname === "/portfolio"
-                      ? "white"
-                      : "black",
+                    pathname === "/portfolio" ||
+                    pathname === "/calculator"
+                      ? "#ffffff"
+                      : "#000000",
                 }}
                 whileHover={{ scale: 1.2, color: "#ff0084" }}
               >
@@ -119,9 +131,10 @@ function Header() {
                   color:
                     pathname === "/movie-database" ||
                     pathname === "/javascript-game" ||
-                    pathname === "/portfolio"
-                      ? "white"
-                      : "black",
+                    pathname === "/portfolio" ||
+                    pathname === "/calculator"
+                      ? "#ffffff"
+                      : "#000000",
                 }}
                 whileHover={{ scale: 1.2, color: "#ff0084" }}
               >

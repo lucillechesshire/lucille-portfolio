@@ -22,7 +22,7 @@ const spinInVariants = {
   hidden: { opacity: 0, rotateY: 180 },
 };
 
-function SingleWorks() {
+function SingleWorks({ isOpen }) {
   const { slug } = useParams();
   const [project, setProject] = useState(null);
   const [isVisible, setIsVisible] = useState(null);
@@ -51,7 +51,10 @@ function SingleWorks() {
             <div className="screenshot-container">
               <img className="screenshot" src={project.screenshot} />
             </div>
-            <div className="arrow bounce">
+            <div
+              style={{ display: isOpen ? "none" : "block" }}
+              className="arrow bounce"
+            >
               <a className="fa fa-arrow-down fa-2x" href="#single-info"></a>
             </div>
           </section>
@@ -101,7 +104,7 @@ function SingleWorks() {
               </motion.div>
             </div>
             <motion.span
-              className="padding"
+              className="padding see-more"
               style={{ display: "inline-block" }}
               whileHover={{
                 scale: 1.1,

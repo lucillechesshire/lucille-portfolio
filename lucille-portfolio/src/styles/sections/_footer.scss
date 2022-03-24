@@ -1,0 +1,28 @@
+.footer {
+  background-color: #ff0084;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem 0.5rem 0.25rem 0.5rem;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: black;
+  grid-column-start: 3;
+  justify-self: end;
+  align-self: end;
+}
+.socials {
+  color: white;
+  grid-column-start: 2;
+  justify-self: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  font-size: 1.5rem;
+}
+.socials a:hover {
+  color: white;
+}

@@ -76,8 +76,11 @@ const AllWorks = () => {
       </Marquee>
       <Slider {...settings}>
         {SliderData.map((slider, index) => (
-          <div className={index === imageIndex ? "slide activeSlide" : "slide"}>
-            <Link to={`/${slider.slug}`} key={index}>
+          <div
+            key={index}
+            className={index === imageIndex ? "slide activeSlide" : "slide"}
+          >
+            <Link to={`/${slider.slug}`}>
               <motion.img
                 whileHover={{
                   scale: 1.1,

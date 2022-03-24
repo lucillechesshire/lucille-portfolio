@@ -40,7 +40,7 @@ const item = {
   },
 };
 
-function FrontPage() {
+function FrontPage({ isOpen }) {
   return (
     <motion.div
       initial={{ scaleX: 0 }}
@@ -153,7 +153,10 @@ function FrontPage() {
         </motion.button>
       </section>
 
-      <div className="arrow bounce">
+      <div
+        style={{ display: isOpen ? "none" : "block" }}
+        className="arrow bounce"
+      >
         <a className="fa fa-arrow-down fa-2x" href="#works"></a>
       </div>
       <AllWorks />
