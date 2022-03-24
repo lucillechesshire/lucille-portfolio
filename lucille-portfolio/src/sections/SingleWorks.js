@@ -46,6 +46,16 @@ function SingleWorks({ isOpen }) {
         <div>
           <section className={`${slug} padding`} id="single-cover">
             <p className="proj-title">{project.title}</p>
+            <div className="link-container">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener"
+                className="link-to-proj"
+              >
+                Live Site
+              </a>
+            </div>
             <h2>{project.description}</h2>
             <p>{project.type}</p>
             <div className="screenshot-container">

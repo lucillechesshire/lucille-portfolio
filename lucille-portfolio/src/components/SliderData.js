@@ -13,6 +13,7 @@ export const SliderData = [
     summary:
       "Designed and built an interactive card matching game using jQuery, HTML and CSS.",
     year: "2021",
+    link: "https://google.ca",
     skillsUsed: ["HTML", "CSS", "JavaScript", "jQuery", "Adobe"],
     components: [
       "Opening Screen",
@@ -52,6 +53,7 @@ export const SliderData = [
     summary:
       "Collaborated with two team members to develop a fully responsive movie database application using React and SASS.",
     year: "2021",
+    link: "https://google.ca",
     skillsUsed: ["React", "SASS", "Adobe"],
     components: [
       "Storing Functionality",
@@ -86,6 +88,7 @@ export const SliderData = [
     screenshot: IMAGES.neonRaft,
     summary: "",
     year: "2022",
+    link: "https://google.ca",
     skillsUsed: ["React", "SASS", "Adobe"],
     components: [
       "Storing Functionality",
@@ -109,6 +112,7 @@ export const SliderData = [
     summary:
       "Designed and built a personal portfolio to exemplify me and my work.",
     year: "2022",
+    link: "https://google.ca",
     skillsUsed: ["React", "SASS", "Adobe"],
     components: ["Framer Motion", "React Router", "Responisive Layout"],
     design:
@@ -138,6 +142,7 @@ export const SliderData = [
     summary:
       "My introduction to React. Designed and built a fully operative calculator using OOP and React Library.",
     year: "2021",
+    link: "https://google.ca",
     skillsUsed: ["HTML", "CSS", "React", "JavaScript"],
     components: [
       "AC/C Keys",

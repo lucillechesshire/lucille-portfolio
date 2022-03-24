@@ -214,3 +214,16 @@ section.screen-pic-container {
 .see-more {
   margin-bottom: 1rem;
 }
+
+a.link-to-proj {
+  color: white;
+  background-color: #ff0084;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.link-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
