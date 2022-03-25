@@ -19,13 +19,7 @@ const slideInVariants = {
 
 function About() {
   return (
-    <section
-      whileInView="visible"
-      initial="hidden"
-      variants={fadeInVariants}
-      viewport={{ amount: 0.5 }}
-      id="about"
-    >
+    <section id="about">
       <Particles />
       <div className="all-about-me padding">
         <div className="my-tools">

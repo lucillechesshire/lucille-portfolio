@@ -27,7 +27,6 @@ function Contact() {
     >
       {isTablet ? (
         <Marquee
-          pauseOnHover={true}
           loop={0}
           gradient={false}
           speed={60}
