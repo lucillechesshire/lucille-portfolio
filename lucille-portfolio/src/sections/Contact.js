@@ -27,10 +27,10 @@ function Contact() {
     >
       {isTablet ? (
         <Marquee
-          pauseOnHover={true}
           loop={0}
           gradient={false}
           speed={60}
+          lazyLoad={true}
           className="together-marquee"
         >
           <h2>Let's Work Together!</h2>

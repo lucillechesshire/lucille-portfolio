@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import Header from "./sections/Header";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
@@ -17,7 +17,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <CustomCursor />
+        <CustomCursor />
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>

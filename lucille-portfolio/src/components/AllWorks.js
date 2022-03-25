@@ -15,12 +15,6 @@ const fadeInVariants = {
   hidden: { opacity: 0 },
 };
 
-// const slideInVariants = {
-//   visible: { opacity: 1, transition: { duration: 2 }, x: 0 },
-//   hiddenRight: { opacity: 0, x: 200 },
-//   hiddenLeft: { opacity: 0, x: -200 },
-// };
-
 const AllWorks = () => {
   const isTablet = useMediaQuery({
     query: "(min-width: 700px)",
@@ -68,7 +62,6 @@ const AllWorks = () => {
       {isTablet ? (
         <Marquee
           className="works-marquee"
-          pauseOnHover={true}
           loop={0}
           gradient={false}
           speed={60}
