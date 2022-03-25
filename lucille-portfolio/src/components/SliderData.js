@@ -13,7 +13,7 @@ export const SliderData = [
     summary:
       "Designed and built an interactive card matching game using jQuery, HTML and CSS.",
     year: "2021",
-    link: "https://google.ca",
+    link: "https://www.lucillechesshire.com/fruit-basket/",
     skillsUsed: ["HTML", "CSS", "JavaScript", "jQuery", "Adobe"],
     components: [
       "Opening Screen",
@@ -53,7 +53,7 @@ export const SliderData = [
     summary:
       "Collaborated with two team members to develop a fully responsive movie database application using React and SASS.",
     year: "2021",
-    link: "https://google.ca",
+    link: "https://www.lucillechesshire.com/movie-app/",
     skillsUsed: ["React", "SASS", "Adobe"],
     components: [
       "Storing Functionality",
@@ -96,9 +96,19 @@ export const SliderData = [
       "Local Storage",
       "Responisive Layout",
     ],
-    design: "",
-    development: "",
-    colorBlocks: "",
+    design: "TBD",
+    sitePics: [
+      require("../assets/images/sitePics/capstone/coming-soon.png"),
+      require("../assets/images/sitePics/capstone/coming-soon.png"),
+      require("../assets/images/sitePics/capstone/coming-soon.png"),
+    ],
+    development: "TBD",
+    colorBlocks: [
+      { block: COLORBLOCKS.creamBlock, hex: "#02c5fe" },
+      { block: COLORBLOCKS.blackBlock, hex: "#000000" },
+      { block: COLORBLOCKS.hotPinkBlock, hex: "#eb50b4" },
+      { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
+    ],
   },
 
   {
@@ -118,9 +128,9 @@ export const SliderData = [
     design:
       "Decided upon a parallax style website for my personal portfolio. Began by creating a content plan and site map to organize content and plan UX/UI. Constructed wireframes as well as a roughly designed functioning prototype using Adobe XD. ",
     sitePics: [
-      require("../assets/images/sitePics/movie-db/db-desk-home.png"),
-      require("../assets/images/sitePics/movie-db/db-desk-ind.png"),
-      require("../assets/images/sitePics/movie-db/db-desk-ab.png"),
+      require("../assets/images/sitePics/portfolio/wire-home.png"),
+      require("../assets/images/sitePics/portfolio/wire-works.png"),
+      require("../assets/images/sitePics/portfolio/wire-contact.png"),
     ],
     development:
       "Used React to build a portfolio responsive on all screen sizes. Created an array of projects to later call using routes to display all my recent work. Imported React Hooks such as useState and useEffect to filter through data and output on its respective pages. Incorporated a large amount of animations and page transition using Framer Motion.",
@@ -133,7 +143,7 @@ export const SliderData = [
   },
   {
     id: 6,
-    title: "Calculator",
+    title: "Calculator App",
     image: IMAGES.calcTile,
     slug: "calculator",
     description: "A fully functioning calculator to perform basic operations",
@@ -142,7 +152,7 @@ export const SliderData = [
     summary:
       "My introduction to React. Designed and built a fully operative calculator using OOP and React Library.",
     year: "2021",
-    link: "https://google.ca",
+    link: "https://www.lucillechesshire.com/calc-app/",
     skillsUsed: ["HTML", "CSS", "React", "JavaScript"],
     components: [
       "AC/C Keys",
@@ -153,7 +163,7 @@ export const SliderData = [
     ],
     design:
       "Not much planning went into the design process as I created this primarily to learn basic functionality of the React Library. A basic black and white color scheme for the calculator as well as a light blue for the background color of the application.",
-    sitePics: [require("../assets/images/sitePics/calculator/calculator.png")],
+    sitePics: [require("../assets/images/sitePics/calculator/my-calc.png")],
     development:
       "My first time developing an app using the React Library. Used the Object-Oriented Programming model to pull in data for my buttons to later call in to other components. My introductory to built-in and primitive react Hooks such as useState, as well as creating components whilst passing through its respective props to render out the appropriate information.",
     colorBlocks: [

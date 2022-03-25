@@ -42,7 +42,7 @@ function Contact() {
               scale: 1.1,
               rotate: -15,
               loop: 0,
-              backgroundColor: "white",
+              backgroundColor: "#ffffff",
               mixBlendMode: "difference",
               color: "#ff0084",
             }}

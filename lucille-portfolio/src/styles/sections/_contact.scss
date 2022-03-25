@@ -57,10 +57,13 @@ section#contact {
 }
 
 .together-marquee h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-block: 1.5rem;
+  margin-left: 1rem;
+
   @media (min-width: 700px) {
     font-size: 3rem;
     padding-top: 2.5rem;
+    margin-left: 2rem;
   }
 }

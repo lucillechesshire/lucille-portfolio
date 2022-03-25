@@ -51,73 +51,74 @@ function FrontPage({ isOpen }) {
       id="home"
     >
       <section className="title-container padding">
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          exit="exit"
-          className="descrip-words"
-        >
-          <motion.p variants={item} className="jt --debug coding">
-            <span className="jt__row">
-              <span className="jt__text">Coding.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Coding.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Coding.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Coding.</span>
-            </span>
-          </motion.p>
-          <motion.p variants={item} className="jt --debug branding">
-            <span className="jt__row">
-              <span className="jt__text">Branding.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Branding.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Branding.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Branding.</span>
-            </span>
-          </motion.p>
+        <div className="to-center">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+            className="descrip-words"
+          >
+            <motion.p variants={item} className="jt --debug coding">
+              <span className="jt__row">
+                <span className="jt__text">Coding.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Coding.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Coding.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Coding.</span>
+              </span>
+            </motion.p>
+            <motion.p variants={item} className="jt --debug branding">
+              <span className="jt__row">
+                <span className="jt__text">Branding.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Branding.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Branding.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Branding.</span>
+              </span>
+            </motion.p>
 
-          <motion.p variants={item} className="jt --debug designing">
-            <span className="jt__row">
-              <span className="jt__text">Designing.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Designing.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Designing.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Designing.</span>
-            </span>
-          </motion.p>
+            <motion.p variants={item} className="jt --debug designing">
+              <span className="jt__row">
+                <span className="jt__text">Designing.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Designing.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Designing.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Designing.</span>
+              </span>
+            </motion.p>
 
-          <motion.p variants={item} className="jt --debug innovating">
-            <span className="jt__row">
-              <span className="jt__text">Innovating.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Innovating.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Innovating.</span>
-            </span>
-            <span className="jt__row jt__row--sibling" aria-hidden="true">
-              <span className="jt__text">Innovating.</span>
-            </span>
-          </motion.p>
-        </motion.div>
-        {/* <motion.h1 className="name-title">
+            <motion.p variants={item} className="jt --debug innovating">
+              <span className="jt__row">
+                <span className="jt__text">Innovating.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Innovating.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Innovating.</span>
+              </span>
+              <span className="jt__row jt__row--sibling" aria-hidden="true">
+                <span className="jt__text">Innovating.</span>
+              </span>
+            </motion.p>
+          </motion.div>
+          {/* <motion.h1 className="name-title">
           <motion.div
             initial={{ x: -200 }}
             transition={{ duration: 0.8 }}
@@ -137,28 +138,29 @@ function FrontPage({ isOpen }) {
           </motion.div>
         </motion.h1> */}
 
-        {/* <Marquee loop={0} gradient={false} direction="right">
+          {/* <Marquee loop={0} gradient={false} direction="right">
           <Banner firstName="Lucille" lastName="Chesshire" />
         </Marquee> */}
 
-        <Banner firstName="Lucille" lastName="Chesshire" />
+          <Banner firstName="Lucille" lastName="Chesshire" />
 
-        <motion.button
-          whileHover={{
-            scale: 1.1,
-          }}
-          className="work-cta"
+          <motion.button
+            whileHover={{
+              scale: 1.1,
+            }}
+            className="work-cta"
+          >
+            <a href="#works">My Work</a>
+          </motion.button>
+        </div>
+        <div
+          style={{ display: isOpen ? "none" : "block" }}
+          className="arrow bounce"
         >
-          <a href="#works">My Work</a>
-        </motion.button>
+          <a className="fa fa-arrow-down fa-2x" href="#works"></a>
+        </div>
       </section>
 
-      <div
-        style={{ display: isOpen ? "none" : "block" }}
-        className="arrow bounce"
-      >
-        <a className="fa fa-arrow-down fa-2x" href="#works"></a>
-      </div>
       <AllWorks />
       <About />
       <Contact />

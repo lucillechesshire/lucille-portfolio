@@ -47,19 +47,23 @@ function SingleWorks({ isOpen }) {
           <section className={`${slug} padding`} id="single-cover">
             <p className="proj-title">{project.title}</p>
             <div className="link-container">
-              <a
+              <motion.a
                 href={project.link}
                 target="_blank"
                 rel="noopener"
                 className="link-to-proj"
+                style={{ display: "inline-block" }}
+                whileHover={{
+                  scale: 1.1,
+                }}
               >
                 Live Site
-              </a>
+              </motion.a>
             </div>
             <h2>{project.description}</h2>
             <p>{project.type}</p>
             <div className="screenshot-container">
-              <img className="screenshot" src={project.screenshot} />
+              <img className={`${slug} screenshot`} src={project.screenshot} />
             </div>
             <div
               style={{ display: isOpen ? "none" : "block" }}
@@ -115,9 +119,10 @@ function SingleWorks({ isOpen }) {
             </div>
             <motion.span
               className="padding see-more"
-              style={{ display: "inline-block" }}
+              style={{ display: "inline-block", color: "#ffffff" }}
               whileHover={{
                 scale: 1.1,
+                color: "#ffffff",
               }}
             >
               <a
@@ -170,15 +175,15 @@ function MoreInfo() {
             <p>{project.design}</p>
             {project.sitePicsMobile && (
               <section className="mobile-container screen-pic-container">
-                {project.sitePicsMobile.map((project, index) => (
-                  <div key={index}>
+                {/* {project.sitePicsMobile.map((project, index) => (
+                  <div className={`${slug} padding`} key={index}>
                     <img className="screen-pics" src={project} />
                   </div>
-                ))}
+                ))} */}
               </section>
             )}
 
-            <section className="screen-pic-container padding">
+            <section className={`${slug} screen-pic-container`}>
               {project.sitePics.map((project, index) => (
                 <div key={index}>
                   <img className="screen-pics" src={project} />
@@ -195,12 +200,8 @@ function MoreInfo() {
             className="all-color-blocks"
           >
             {project.colorBlocks.map((project, index) => (
-              <div>
-                <img
-                  className="color-block-img"
-                  key={index}
-                  src={project.block}
-                />
+              <div key={index}>
+                <img className="color-block-img" src={project.block} />
                 <p className="hex">{project.hex}</p>
               </div>
             ))}
@@ -228,7 +229,7 @@ function MoreInfo() {
                   key={index}
                 >
                   <motion.a
-                    style={{ color: "white" }}
+                    style={{ color: "#ffffff" }}
                     whileHover={{
                       color: "#ff0084",
                     }}

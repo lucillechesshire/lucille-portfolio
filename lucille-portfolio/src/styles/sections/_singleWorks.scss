@@ -68,6 +68,8 @@ p.hex {
 #single-cover {
   height: 100vh;
   padding-top: 3rem;
+  position: relative;
+  overflow-y: hidden;
 }
 
 #single-cover p {
@@ -75,10 +77,14 @@ p.hex {
   font-weight: 600;
 }
 
+.arrow.bounce {
+  position: absolute;
+  bottom: 3rem;
+}
+
 #single-cover .fa-arrow-down:before {
   color: white;
-  position: absolute;
-  bottom: -2.5rem;
+
   left: 0.75rem;
 }
 
@@ -114,9 +120,26 @@ p.hex {
     linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
 }
 
-.javascript-game .header {
-  background-color: #02c5fe;
+//Javascript Game //
+.javascript-game.screen-pic-container,
+.movie-database.screen-pic-container,
+.portfolio.screen-pic-container,
+.calculator.screen-pic-container,
+.capstone.screen-pic-container {
+  // background-color: #33b2f3;
+  // color: black;
+  background-color: #f9f9f7;
+  color: white;
+  background-image: unset;
 }
+
+#single-works .calculator img {
+  max-width: 100%;
+  display: block;
+}
+// .javascript-game .header {
+//   background-color: #02c5fe;
+// }
 
 //Movie Database//
 
@@ -226,4 +249,8 @@ a.link-to-proj {
   width: 100%;
   justify-content: flex-end;
   padding-bottom: 1rem;
+}
+
+#single-works.calculator img {
+  max-width: unset;
 }
