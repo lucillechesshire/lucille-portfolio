@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../assets/images/logo/luce-logo.png";
 import { HashLink } from "react-router-hash-link";
-// import Particles from "../components/Particles";
 import { motion } from "framer-motion";
 
 function Header({ isOpen, setIsOpen }) {

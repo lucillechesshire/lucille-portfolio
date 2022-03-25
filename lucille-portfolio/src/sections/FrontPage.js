@@ -1,13 +1,9 @@
 import React from "react";
-import IMAGES from "../assets/images/images.js";
 import AllWorks from "../components/AllWorks.js";
 import About from "./About.js";
 import Contact from "./Contact.js";
-import { SliderData } from "../components/SliderData";
-// import scrollBar from "../assets/svgs/scroll-bar.svg";
 import { motion } from "framer-motion";
 import Banner from "../components/Banner.js";
-import Marquee from "react-fast-marquee";
 
 const container = {
   show: {
@@ -118,30 +114,6 @@ function FrontPage({ isOpen }) {
               </span>
             </motion.p>
           </motion.div>
-          {/* <motion.h1 className="name-title">
-          <motion.div
-            initial={{ x: -200 }}
-            transition={{ duration: 0.8 }}
-            animate={{ x: 0 }}
-            className="lucille"
-          >
-            Lucille
-          </motion.div>
-          <motion.div
-            initial={{ x: 200 }}
-            transition={{ duration: 0.8 }}
-            animate={{ x: 0 }}
-            className="chesshire"
-          >
-            Chesshire
-            <span className="dot">.</span>
-          </motion.div>
-        </motion.h1> */}
-
-          {/* <Marquee loop={0} gradient={false} direction="right">
-          <Banner firstName="Lucille" lastName="Chesshire" />
-        </Marquee> */}
-
           <Banner firstName="Lucille" lastName="Chesshire" />
 
           <motion.button

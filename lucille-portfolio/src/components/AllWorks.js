@@ -15,11 +15,6 @@ const fadeInVariants = {
   hidden: { opacity: 0 },
 };
 
-// const slideInVariants = {
-//   visible: { opacity: 1, transition: { duration: 2 }, x: 0 },
-//   hiddenRight: { opacity: 0, x: 200 },
-//   hiddenLeft: { opacity: 0, x: -200 },
-// };
 
 const AllWorks = () => {
   const isTablet = useMediaQuery({

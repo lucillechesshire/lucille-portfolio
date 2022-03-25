@@ -123,7 +123,6 @@ export const SliderData = [
     summary:
       "Designed and built a personal portfolio to exemplify me and my work.",
     year: "2022",
-    link: "https://google.ca",
     skillsUsed: ["React", "SCSS", "Adobe"],
     components: ["Framer Motion", "React Router", "Responisive Layout"],
     design:

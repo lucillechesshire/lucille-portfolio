@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import puzzle from "../assets/images/puzzles.png";
-import Particles from "../components/Particles";
+import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import { useMediaQuery } from "react-responsive";
 
@@ -60,7 +57,6 @@ function Contact() {
             Email Me
           </motion.a>
         </p>
-        {/* <img className="puzzle" src={puzzle}></img> */}
       </div>
     </motion.section>
   );

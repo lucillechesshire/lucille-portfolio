@@ -1,11 +1,6 @@
 #single-works {
   padding: 0;
 }
-
-// section#single-info {
-//   padding-inline: 0;
-// }
-
 h2.selected-works,
 h2.lets-work-togeth {
   text-align: center;
@@ -53,9 +48,7 @@ h2.lets-work-togeth {
     max-height: 150px;
   }
 }
-// .colors-title {
-//   text-align: center;
-// }
+
 
 p.hex {
   text-align: center;
@@ -106,14 +99,13 @@ p.hex {
   max-width: unset;
 }
 
-//Javascript Game //
+// Single Works Page Background Colors//
+
 .javascript-game,
 .movie-database,
 .portfolio,
 .calculator,
 .capstone {
-  // background-color: #33b2f3;
-  // color: black;
   background-color: black;
   color: white;
   background-size: 40px 40px;
@@ -125,14 +117,12 @@ p.hex {
     linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
 }
 
-//Javascript Game //
 .javascript-game.screen-pic-container,
 .movie-database.screen-pic-container,
 .portfolio.screen-pic-container,
 .calculator.screen-pic-container,
 .capstone.screen-pic-container {
-  // background-color: #33b2f3;
-  // color: black;
+
   background-color: #f9f9f7;
   color: white;
   background-image: unset;
@@ -142,11 +132,7 @@ p.hex {
   max-width: 100%;
   display: block;
 }
-// .javascript-game .header {
-//   background-color: #02c5fe;
-// }
 
-//Movie Database//
 
 .single-info {
   padding-top: 3rem;
@@ -172,9 +158,7 @@ p.hex {
 
 .components-list {
   padding-bottom: 2rem;
-  // @media (min-width: 1000px) {
-  //   padding-left: 7rem;
-  // }
+
 }
 
 .design-div {

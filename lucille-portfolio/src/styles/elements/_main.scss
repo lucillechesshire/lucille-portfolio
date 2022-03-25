@@ -2,24 +2,16 @@ body {
   background-color: black;
   overflow-x: hidden;
   position: relative;
-  // cursor: none;
+
   background-size: 40px 40px;
   background-image: linear-gradient(to right, grey 1px, transparent 1px),
     linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 
-// section {
-//   padding-inline: 1.5rem;
-//   @media (min-width: 700px) {
-//     padding-inline: 3.5rem;
-//   }
-// }
-
 html {
   scroll-behavior: smooth;
   background-color: black;
   overflow-x: hidden;
-  // cursor: none;
 }
 
 .padding {
