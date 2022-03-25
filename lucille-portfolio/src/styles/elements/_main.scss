@@ -8,18 +8,12 @@ body {
     linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 
-// section {
-//   padding-inline: 1.5rem;
-//   @media (min-width: 700px) {
-//     padding-inline: 3.5rem;
-//   }
-// }
-
 html {
   scroll-behavior: smooth;
   background-color: black;
   overflow-x: hidden;
-  // cursor: none;
+  height: 100%;
+  cursor: none;
 }
 
 .padding {

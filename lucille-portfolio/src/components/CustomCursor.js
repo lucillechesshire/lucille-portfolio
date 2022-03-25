@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import "../styles/elements/_cursor.scss";
+import CustomCursorContext from "../components/CustomCursorContext.ts";
 
-function CustomCursor() {
+const CustomCursor = () => {
+  const { type } = useContext(CustomCursorContext);
+  const secondaryCursor = React.useRef(null);
   const mainCursor = React.useRef(null);
-  const secondCursor = React.useRef(null);
-
   const positionRef = React.useRef({
     mouseX: 0,
     mouseY: 0,
@@ -22,10 +24,9 @@ function CustomCursor() {
       const mouseY = clientY;
 
       positionRef.current.mouseX =
-        mouseX - secondCursor.current.clientWidth / 2;
+        mouseX - secondaryCursor.current.clientWidth / 2;
       positionRef.current.mouseY =
-        mouseY - secondCursor.current.clientHeight / 2;
-
+        mouseY - secondaryCursor.current.clientHeight / 2;
       mainCursor.current.style.transform = `translate3d(${
         mouseX - mainCursor.current.clientWidth / 2
       }px, ${mouseY - mainCursor.current.clientHeight / 2}px, 0)`;
@@ -37,7 +38,6 @@ function CustomCursor() {
   React.useEffect(() => {
     const followMouse = () => {
       positionRef.current.key = requestAnimationFrame(followMouse);
-
       const {
         mouseX,
         mouseY,
@@ -46,14 +46,12 @@ function CustomCursor() {
         distanceX,
         distanceY,
       } = positionRef.current;
-
       if (!destinationX || !destinationY) {
         positionRef.current.destinationX = mouseX;
         positionRef.current.destinationY = mouseY;
       } else {
         positionRef.current.distanceX = (mouseX - destinationX) * 0.1;
         positionRef.current.distanceY = (mouseY - destinationY) * 0.1;
-
         if (
           Math.abs(positionRef.current.distanceX) +
             Math.abs(positionRef.current.distanceY) <
@@ -66,19 +64,21 @@ function CustomCursor() {
           positionRef.current.destinationY += distanceY;
         }
       }
-
-      secondCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+      secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
     };
-
     followMouse();
   }, []);
-
   return (
-    <div className="cursor-container">
-      <div className="main-cursor" ref={mainCursor}></div>
-      <div className="second-cursor" ref={secondCursor}></div>
+    <div className={`cursor-wrapper ${type}`}>
+      <div className="main-cursor " ref={mainCursor}>
+        <div className="main-cursor-background"></div>
+      </div>
+      <div className="secondary-cursor" ref={secondaryCursor}>
+        <div className="cursor-background"></div>
+      </div>
+      ;
     </div>
   );
-}
+};
 
 export default CustomCursor;
