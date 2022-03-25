@@ -54,7 +54,7 @@ export const SliderData = [
       "Collaborated with two team members to develop a fully responsive movie database application using React and SASS.",
     year: "2021",
     link: "https://www.lucillechesshire.com/movie-app/",
-    skillsUsed: ["React", "SASS", "Adobe"],
+    skillsUsed: ["React", "SCSS", "Adobe"],
     components: [
       "Storing Functionality",
       "Rest API",
@@ -62,7 +62,7 @@ export const SliderData = [
       "Responisive Layout",
     ],
     design:
-      "Started out by creating a high-fidelity mock-up using Adobe XD to come up with the overall design and functionality of website. Decided upon using black as the primary colour to accentuate the blue and white secondary colours and give prominence to the visually prevailing content. Styled using SASS through a mobile-first approach, making this application responsive for all screen sizes.",
+      "Started out by creating a high-fidelity mock-up using Adobe XD to come up with the overall design and functionality of website. Decided upon using black as the primary colour to accentuate the blue and white as a secondary colour to give prominence to the visually prevailing content. Styled using SASS through a mobile-first approach, making this application responsive for all screen sizes.",
     sitePics: [
       require("../assets/images/sitePics/movie-db/db-desk-home.png"),
       require("../assets/images/sitePics/movie-db/db-desk-ind.png"),
@@ -80,23 +80,24 @@ export const SliderData = [
 
   {
     id: 3,
-    title: "Raft Kings",
+    title: "Extreme Floats",
     image: IMAGES.neonRaft,
     slug: "capstone",
     description: "A website consisting of an up-to-date movie library.",
-    type: "Web Application",
+    type: "Online Store",
     screenshot: IMAGES.neonRaft,
     summary: "",
     year: "2022",
     link: "https://google.ca",
-    skillsUsed: ["React", "SASS", "Adobe"],
+    skillsUsed: ["React", "SCSS", "WooCommerce", "WordPress"],
     components: [
-      "Storing Functionality",
-      "Rest API",
-      "Local Storage",
+      "Booking Functionality",
+      "Security Plugins",
+      "Performance Optimization",
       "Responisive Layout",
     ],
-    design: "TBD",
+    design:
+      "Worked in a team of three and began by constructing a project management and communication plan for the team. Moved on to creating a website content plan as well as wireframes and a site development plan. Decided upon a parallax style home page with many CTA's to encourage bookings. As for the pallet, agreed upon a light and refreshing color scheme, consisting of various blues, and some orange for vibrancy.",
     sitePics: [
       require("../assets/images/sitePics/capstone/coming-soon.png"),
       require("../assets/images/sitePics/capstone/coming-soon.png"),
@@ -104,10 +105,10 @@ export const SliderData = [
     ],
     development: "TBD",
     colorBlocks: [
-      { block: COLORBLOCKS.creamBlock, hex: "#02c5fe" },
-      { block: COLORBLOCKS.blackBlock, hex: "#000000" },
-      { block: COLORBLOCKS.hotPinkBlock, hex: "#eb50b4" },
-      { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
+      { block: COLORBLOCKS.navyBlock, hex: "#293241 " },
+      { block: COLORBLOCKS.orangeBlock, hex: "#ee6c4d" },
+      { block: COLORBLOCKS.medBlueBlock, hex: "#3d5a80" },
+      { block: COLORBLOCKS.turqBlock, hex: "#e0fbfc" },
     ],
   },
 
@@ -123,7 +124,7 @@ export const SliderData = [
       "Designed and built a personal portfolio to exemplify me and my work.",
     year: "2022",
     link: "https://google.ca",
-    skillsUsed: ["React", "SASS", "Adobe"],
+    skillsUsed: ["React", "SCSS", "Adobe"],
     components: ["Framer Motion", "React Router", "Responisive Layout"],
     design:
       "Decided upon a parallax style website for my personal portfolio. Began by creating a content plan and site map to organize content and plan UX/UI. Constructed wireframes as well as a roughly designed functioning prototype using Adobe XD. ",
@@ -167,10 +168,10 @@ export const SliderData = [
     development:
       "My first time developing an app using the React Library. Used the Object-Oriented Programming model to pull in data for my buttons to later call in to other components. My introductory to built-in and primitive react Hooks such as useState, as well as creating components whilst passing through its respective props to render out the appropriate information.",
     colorBlocks: [
+      { block: COLORBLOCKS.calcBlueBlock, hex: "#87cefa" },
+      { block: COLORBLOCKS.blackBlock, hex: "#000000" },
+      { block: COLORBLOCKS.greyBlock, hex: "#efefef" },
       { block: COLORBLOCKS.whiteBlock, hex: "#ffffff" },
-      { block: COLORBLOCKS.neonBlueBlock, hex: "#33b2f3" },
-      { block: COLORBLOCKS.redBlock, hex: "#fe525a" },
-      { block: COLORBLOCKS.greenBlock, hex: "#7ec32e" },
     ],
     mockup: "MOCKUPS",
   },

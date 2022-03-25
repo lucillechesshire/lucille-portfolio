@@ -57,9 +57,9 @@ span.dot {
   display: flex;
   position: relative;
 
-  @media (min-width: 1000px) {
-    height: 40rem;
-  }
+  // @media (min-width: 1000px) {
+  //   height: 40rem;
+  // }
 }
 
 .descrip-words p {
@@ -123,26 +123,27 @@ span.dot {
   text-align: center;
   border-radius: 10px;
   position: absolute;
-  bottom: 12.5rem;
+  // bottom: 12.5rem;
+  bottom: 41vh;
   border: none;
   right: 1rem;
   mix-blend-mode: difference;
 
   @media (min-width: 500px) {
-    bottom: 12.5rem;
+    // bottom: 12.5rem;
   }
 
-  @media (min-width: 700px) {
-    bottom: 8.5rem;
+  @media (min-width: 720px) {
+    bottom: 33vh;
   }
 
-  @media (min-width: 900px) {
-    bottom: 6.5rem;
+  @media (min-width: 800px) {
+    bottom: 29vh;
     padding: 0.75rem;
   }
 
   @media (min-width: 1000px) {
-    bottom: 10rem;
+    bottom: 27vh;
     padding: 1rem;
   }
 }

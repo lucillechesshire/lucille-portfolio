@@ -8,5 +8,11 @@ const COLORBLOCKS = {
   greenBlock: require("../svgs/color-blocks/block-green.svg").default,
   hotPinkBlock: require("../svgs/color-blocks/block-hot-pink.svg").default,
   creamBlock: require("../svgs/color-blocks/block-cream.svg").default,
+  calcBlueBlock: require("../svgs/color-blocks/block-calc.svg").default,
+  greyBlock: require("../svgs/color-blocks/block-grey.svg").default,
+  turqBlock: require("../svgs/color-blocks/block-turquoise.svg").default,
+  medBlueBlock: require("../svgs/color-blocks/block-med-blue.svg").default,
+  orangeBlock: require("../svgs/color-blocks/block-orange.svg").default,
+  navyBlock: require("../svgs/color-blocks/block-navy.svg").default,
 };
 export default COLORBLOCKS;
