@@ -173,15 +173,6 @@ function MoreInfo() {
           >
             <h4>Concept and Design</h4>
             <p>{project.design}</p>
-            {project.sitePicsMobile && (
-              <section className="mobile-container screen-pic-container">
-                {/* {project.sitePicsMobile.map((project, index) => (
-                  <div className={`${slug} padding`} key={index}>
-                    <img className="screen-pics" src={project} />
-                  </div>
-                ))} */}
-              </section>
-            )}
 
             <section className={`${slug} screen-pic-container`}>
               {project.sitePics.map((project, index) => (
@@ -217,7 +208,7 @@ function MoreInfo() {
             <p className="padding">{project.development}</p>
           </motion.div>
           <div className="see-other-projects">
-            <Marquee loop={0} gradient={false} speed={60}>
+            <Marquee loop={0} gradient={false} speed={60} lazyLoad={true}>
               <h4>Links to other projects</h4>
             </Marquee>
             <ul className="padding">

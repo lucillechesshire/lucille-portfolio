@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import Header from "./sections/Header";
 import SingleWorks from "./sections/SingleWorks";
 import Footer from "./components/Footer";
@@ -16,9 +16,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <StrictMode>
         <CustomCursor />
-      </StrictMode>
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
