@@ -104,16 +104,15 @@ p.hex {
   width: 100%;
   object-fit: cover;
   max-width: unset;
+  mix-blend-mode: difference;
 }
 
-//Javascript Game //
+//Single Works Background //
 .javascript-game,
 .movie-database,
 .portfolio,
 .calculator,
 .capstone {
-  // background-color: #33b2f3;
-  // color: black;
   background-color: black;
   color: white;
   background-size: 40px 40px;
@@ -125,14 +124,12 @@ p.hex {
     linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
 }
 
-//Javascript Game //
 .javascript-game.screen-pic-container,
 .movie-database.screen-pic-container,
 .portfolio.screen-pic-container,
 .calculator.screen-pic-container,
 .capstone.screen-pic-container {
-  // background-color: #33b2f3;
-  // color: black;
+
   background-color: #f9f9f7;
   color: white;
   background-image: unset;

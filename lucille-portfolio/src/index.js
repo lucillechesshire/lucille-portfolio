@@ -9,10 +9,13 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ScrollToTop from "./ScrollToTop";
+import CustomCursor from "./components/CustomCursor";
+
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+
       <ScrollToTop>
         <App />
       </ScrollToTop>

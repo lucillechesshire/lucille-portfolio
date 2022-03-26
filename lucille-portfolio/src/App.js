@@ -7,16 +7,21 @@ import { Routes } from "react-router-dom";
 import { Route, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 import CustomCursor from "./components/CustomCursor";
+
 import ErrorPage from "./components/ErrorPage";
-import { StrictMode } from "react";
 
 function App() {
+  const isTablet = useMediaQuery({
+    query: "(min-width: 700px)",
+  });
+
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-        <CustomCursor />
+      {isTablet && <CustomCursor />}
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
