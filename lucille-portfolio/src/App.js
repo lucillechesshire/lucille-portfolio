@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./sections/Header";
-
 import SingleWorks from "./sections/SingleWorks";
 import Footer from "./components/Footer";
 import FrontPage from "./sections/FrontPage";

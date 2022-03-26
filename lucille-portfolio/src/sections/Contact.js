@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import puzzle from "../assets/images/puzzles.png";
-import Particles from "../components/Particles";
-import Marquee from "react-fast-marquee";
+import React from "react";
+import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import Marquee from "react-easy-marquee";
 
 const fadeInVariants = {
   visible: {
@@ -26,12 +23,7 @@ function Contact() {
       id="contact"
     >
       {isTablet ? (
-        <Marquee
-          loop={0}
-          gradient={false}
-          speed={60}
-          className="together-marquee"
-        >
+        <Marquee duration={10000} height="7rem" className="together-marquee">
           <h2>Let's Work Together!</h2>
         </Marquee>
       ) : (
@@ -59,7 +51,6 @@ function Contact() {
             Email Me
           </motion.a>
         </p>
-        {/* <img className="puzzle" src={puzzle}></img> */}
       </div>
     </motion.section>
   );

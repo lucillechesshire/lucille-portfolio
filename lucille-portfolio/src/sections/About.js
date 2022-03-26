@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
+import { motion } from "framer-motion";
 import Particles from "../components/Particles";
 
 const fadeInVariants = {

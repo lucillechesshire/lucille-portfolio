@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { useMediaQuery } from "react-responsive";
-import Marquee from "react-fast-marquee";
+import Marquee from "react-easy-marquee";
 
 const fadeInVariants = {
   visible: {
@@ -60,13 +60,7 @@ const AllWorks = () => {
       id="works"
     >
       {isTablet ? (
-        <Marquee
-          className="works-marquee"
-          loop={0}
-          gradient={false}
-          speed={60}
-          lazyLoad={true}
-        >
+        <Marquee className="works-marquee" duration={10000} height="7rem">
           <h2 className="selected-works">Selected Works</h2>
         </Marquee>
       ) : (
