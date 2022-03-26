@@ -114,7 +114,6 @@ function FrontPage({ isOpen }) {
               </span>
             </motion.p>
           </motion.div>
-
           <Banner firstName="Lucille" lastName="Chesshire" />
 
           <motion.button

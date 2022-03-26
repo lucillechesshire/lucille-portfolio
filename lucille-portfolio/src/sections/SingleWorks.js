@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { SliderData } from "../components/SliderData";
-import { Link } from "react-scroll";
 import { useAnimation, motion } from "framer-motion";
-import InView, { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import Marquee from "react-fast-marquee";
 
 const slideInVariants = {
@@ -45,20 +44,23 @@ function SingleWorks({ isOpen }) {
         <div>
           <section className={`${slug} padding`} id="single-cover">
             <p className="proj-title">{project.title}</p>
-            <div className="link-container">
-              <motion.a
-                href={project.link}
-                target="_blank"
-                rel="noopener"
-                className="link-to-proj"
-                style={{ display: "inline-block" }}
-                whileHover={{
-                  scale: 1.1,
-                }}
-              >
-                Live Site
-              </motion.a>
-            </div>
+            {project.link && (
+              <div className="link-container">
+                <motion.a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener"
+                  className="link-to-proj"
+                  style={{ display: "inline-block" }}
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                >
+                  Live Site
+                </motion.a>
+              </div>
+            )}
+
             <h2>{project.description}</h2>
             <p>{project.type}</p>
             <div className="screenshot-container">
