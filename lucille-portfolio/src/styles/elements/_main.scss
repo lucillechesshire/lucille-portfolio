@@ -27,6 +27,7 @@ html {
 a:hover {
   color: white;
 }
-a:active {
+a:active,
+a:focus {
   color: $pink;
 }

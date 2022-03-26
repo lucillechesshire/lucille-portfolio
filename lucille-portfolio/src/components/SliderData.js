@@ -89,7 +89,6 @@ export const SliderData = [
     summary:
       "Worked in a team of three to design and develop an online store using WooCommerce.",
     year: "2022",
-    link: "https://google.ca",
     skillsUsed: ["React", "SCSS", "WooCommerce", "WordPress"],
     components: [
       "Booking Functionality",

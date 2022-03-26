@@ -9,6 +9,10 @@
   color: black;
 }
 
+#header span a:hover {
+  color: $pink !important;
+}
+
 #header li {
   list-style-type: none;
   margin: 0.5rem;

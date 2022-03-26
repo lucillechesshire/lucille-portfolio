@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { SliderData } from "../components/SliderData";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Marquee from "react-fast-marquee";
+import Marquee from "react-easy-marquee";
+import { useMediaQuery } from "react-responsive";
 
 const slideInVariants = {
   visible: { opacity: 1, transition: { duration: 2 }, x: 0 },
@@ -154,6 +155,9 @@ function MoreInfo() {
   const [isVisible, setIsVisible] = useState(null);
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const isTablet = useMediaQuery({
+    query: "(min-width: 700px)",
+  });
 
   useEffect(() => {
     const data = SliderData.filter((item) => item.slug === slug);
@@ -221,9 +225,13 @@ function MoreInfo() {
             <p className="padding">{project.development}</p>
           </motion.div>
           <div className="see-other-projects">
-            <Marquee loop={0} gradient={false} speed={60} lazyLoad={true}>
-              <h4>Links to other projects</h4>
-            </Marquee>
+            {isTablet ? (
+              <Marquee duration={20000} height="7rem" gradient={false}>
+                <h4 className="links-to">More Projects</h4>
+              </Marquee>
+            ) : (
+              <h4 className="links-to">More Projects</h4>
+            )}
             <ul className="padding">
               {SliderData.map((project, index) => (
                 <motion.li

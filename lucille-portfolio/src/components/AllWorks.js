@@ -63,7 +63,7 @@ const AllWorks = () => {
       id="works"
     >
       {isTablet ? (
-        <Marquee className="works-marquee" duration={10000} height="7rem">
+        <Marquee className="works-marquee" duration={15000} height="7rem">
           <h2 className="selected-works">Selected Works</h2>
         </Marquee>
       ) : (

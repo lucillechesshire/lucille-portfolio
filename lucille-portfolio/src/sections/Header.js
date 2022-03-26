@@ -87,38 +87,26 @@ function Header({ isOpen, setIsOpen }) {
           onClick={() => setIsOpen(!isOpen)}
         >
           <li>
-            <HashLink to="/#works">
+            <HashLink to="#works">
               <motion.span
                 style={{
                   display: "inline-block",
-                  color:
-                    pathname === "/movie-database" ||
-                    pathname === "/javascript-game" ||
-                    pathname === "/portfolio" ||
-                    pathname === "/calculator"
-                      ? "#ffffff"
-                      : "#000000",
+                  color: pathname !== "/" ? "#ffffff" : "#000000",
                 }}
-                whileHover={{ scale: 1.2, color: "$pink" }}
+                whileHover={{ scale: 1.2 }}
               >
                 Works
               </motion.span>
             </HashLink>
           </li>
           <li>
-            <HashLink to="/#about">
+            <HashLink to="#about">
               <motion.span
                 style={{
                   display: "inline-block",
-                  color:
-                    pathname === "/movie-database" ||
-                    pathname === "/javascript-game" ||
-                    pathname === "/portfolio" ||
-                    pathname === "/calculator"
-                      ? "#ffffff"
-                      : "#000000",
+                  color: pathname !== "/" ? "#ffffff" : "#000000",
                 }}
-                whileHover={{ scale: 1.2, color: "$pink" }}
+                whileHover={{ scale: 1.2 }}
               >
                 About
               </motion.span>
@@ -129,15 +117,9 @@ function Header({ isOpen, setIsOpen }) {
               <motion.span
                 style={{
                   display: "inline-block",
-                  color:
-                    pathname === "/movie-database" ||
-                    pathname === "/javascript-game" ||
-                    pathname === "/portfolio" ||
-                    pathname === "/calculator"
-                      ? "#ffffff"
-                      : "#000000",
+                  color: pathname !== "/" ? "#ffffff" : "#000000",
                 }}
-                whileHover={{ scale: 1.2, color: "$pink" }}
+                whileHover={{ scale: 1.2 }}
               >
                 Contact
               </motion.span>

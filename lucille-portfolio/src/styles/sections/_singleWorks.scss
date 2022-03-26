@@ -34,6 +34,10 @@ h2.lets-work-togeth {
   max-width: 15.625rem;
   max-height: 15.625rem;
   margin: 0 auto;
+  @media (min-width: 500px) {
+    max-height: 20.625rem;
+  }
+
   @media (min-width: $smallDesk) {
     max-width: 18.75rem;
     max-height: 18.75rem;
@@ -96,6 +100,9 @@ p.hex {
   object-fit: cover;
   max-width: unset;
   mix-blend-mode: difference;
+  @media (min-width: 620px) {
+    width: unset;
+  }
 }
 
 // Single Works Page Background Colors//
@@ -246,4 +253,12 @@ a.link-to-proj {
 
 #single-works.calculator img {
   max-width: unset;
+}
+
+h4.links-to {
+  font-size: 1rem;
+  text-align: center;
+  @media (min-width: $smallDesk) {
+    font-size: 1.3rem;
+  }
 }

@@ -23,7 +23,7 @@ function Contact() {
       id="contact"
     >
       {isTablet ? (
-        <Marquee duration={10000} height="7rem" className="together-marquee">
+        <Marquee duration={15000} height="7rem" className="together-marquee">
           <h2>Let's Work Together!</h2>
         </Marquee>
       ) : (
