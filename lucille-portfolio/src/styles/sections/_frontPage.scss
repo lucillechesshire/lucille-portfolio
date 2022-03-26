@@ -211,26 +211,6 @@ span.dot {
   color: #ff0084;
 }
 
-// scroll bar //
-
-.scroll-container {
-  position: absolute;
-  width: 100vw;
-}
-
-.scroll-bar {
-  position: fixed;
-  right: 0.6rem;
-  top: 10.9rem;
-  z-index: 1000;
-  display: none;
-}
-
-.scroll-bar-svg {
-  // mix-blend-mode: difference;
-  z-index: 1000;
-}
-
 #home a {
   color: black;
 }
@@ -266,7 +246,6 @@ span.dot {
   top: 0;
   left: 0;
   user-select: none;
-  // width: 800px;
 }
 
 .jt__text {

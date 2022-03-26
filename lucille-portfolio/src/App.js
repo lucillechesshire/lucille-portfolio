@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import Header from "./sections/Header";
 import SingleWorks from "./sections/SingleWorks";
 import Footer from "./components/Footer";
@@ -8,9 +8,8 @@ import { Route, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import CustomCursor from "./components/CustomCursor";
-
-import ErrorPage from "./components/ErrorPage";
+import AnimatedCursor from "react-animated-cursor";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   const isTablet = useMediaQuery({
@@ -21,14 +20,35 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      {isTablet && <CustomCursor />}
+      <AnimatedCursor
+        className="cursor"
+        innerSize={35}
+        outerSize={70}
+        color="44, 115, 210"
+        outerAlpha={0.2}
+        innerScale={1}
+        outerScale={1.2}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <>
             <Route path="/" element={<FrontPage isOpen={isOpen} />} />
             <Route path="/:slug" element={<SingleWorks isOpen={isOpen} />} />
-            <Route path="*" element={<ErrorPage />} />
+            <Route path="/404" element={<PageNotFound />} />
           </>
         </Routes>
       </AnimatePresence>

@@ -2,14 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Particles from "../components/Particles";
 
-const fadeInVariants = {
-  visible: {
-    opacity: 1,
-    transition: { duration: 2 },
-  },
-  hidden: { opacity: 0 },
-};
-
 const slideInVariants = {
   visible: { opacity: 1, transition: { duration: 1.4 }, x: 0 },
   hiddenRight: { opacity: 0, x: 200 },

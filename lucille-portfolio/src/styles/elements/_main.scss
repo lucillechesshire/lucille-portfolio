@@ -2,7 +2,6 @@ body {
   background-color: black;
   overflow-x: hidden;
   position: relative;
-  // cursor: none;
   background-size: 40px 40px;
   background-image: linear-gradient(to right, grey 1px, transparent 1px),
     linear-gradient(to bottom, grey 1px, transparent 1px);
@@ -12,7 +11,6 @@ html {
   scroll-behavior: smooth;
   background-color: black;
   overflow-x: hidden;
-  cursor: none;
 }
 
 .padding {
@@ -28,3 +26,4 @@ a:hover {
 a:active {
   color: pink;
 }
+

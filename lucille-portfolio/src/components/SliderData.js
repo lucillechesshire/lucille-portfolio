@@ -86,7 +86,8 @@ export const SliderData = [
     description: "An e-commerce website consisting of booking functionality.",
     type: "Online Store",
     screenshot: IMAGES.neonRaft,
-    summary: "Worked in a team of three to design and develop an online store using WooCommerce",
+    summary:
+      "Worked in a team of three to design and develop an online store using WooCommerce.",
     year: "2022",
     link: "https://google.ca",
     skillsUsed: ["React", "SCSS", "WooCommerce", "WordPress"],
@@ -163,7 +164,7 @@ export const SliderData = [
       "OOP Programming",
     ],
     design:
-      "Not much planning went into the design process as I created this primarily to learn basic functionality of the React Library. A basic black and white color scheme for the calculator as well as a light blue for the background color of the application.",
+      "Not much planning went into the design process as I created this primarily to learn basic functionality of the React Library. A simple black and white color scheme for the calculator as well as a light blue for the background color of the application.",
     sitePics: [require("../assets/images/sitePics/calculator/my-calc.png")],
     development:
       "My first time developing an app using the React Library. Used the Object-Oriented Programming model to pull in data for my buttons to later call in to other components. My introductory to built-in and primitive react Hooks such as useState, as well as creating components whilst passing through its respective props to render out the appropriate information.",

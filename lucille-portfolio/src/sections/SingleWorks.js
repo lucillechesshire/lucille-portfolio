@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { allProjects } from "../components/projectData";
 import { useParams } from "react-router-dom";
 import { SliderData } from "../components/SliderData";
 import { Link } from "react-scroll";
@@ -63,7 +62,11 @@ function SingleWorks({ isOpen }) {
             <h2>{project.description}</h2>
             <p>{project.type}</p>
             <div className="screenshot-container">
-              <img className={`${slug} screenshot`} src={project.screenshot} />
+              <img
+                className={`${slug} screenshot`}
+                src={project.screenshot}
+                alt="project screenshot"
+              />
             </div>
             <div
               style={{ display: isOpen ? "none" : "block" }}
@@ -177,7 +180,11 @@ function MoreInfo() {
             <section className={`${slug} screen-pic-container`}>
               {project.sitePics.map((project, index) => (
                 <div key={index}>
-                  <img className="screen-pics" src={project} />
+                  <img
+                    className="screen-pics"
+                    src={project}
+                    alt="project screenshot"
+                  />
                 </div>
               ))}
             </section>
@@ -192,7 +199,11 @@ function MoreInfo() {
           >
             {project.colorBlocks.map((project, index) => (
               <div key={index}>
-                <img className="color-block-img" src={project.block} />
+                <img
+                  className="color-block-img"
+                  src={project.block}
+                  alt="color pallete images"
+                />
                 <p className="hex">{project.hex}</p>
               </div>
             ))}

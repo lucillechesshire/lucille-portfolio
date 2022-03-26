@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../assets/images/logo/luce-logo.png";
 import { HashLink } from "react-router-hash-link";
-// import Particles from "../components/Particles";
 import { motion } from "framer-motion";
 
 function Header({ isOpen, setIsOpen }) {
@@ -15,6 +14,7 @@ function Header({ isOpen, setIsOpen }) {
         type="checkbox"
         checked={isOpen ? true : false}
         readOnly={true}
+        alt="navigation burger"
       />
 
       <label htmlFor="burger" onClick={() => setIsOpen(!isOpen)}>
@@ -54,6 +54,7 @@ function Header({ isOpen, setIsOpen }) {
       </label>
 
       <nav
+        alt="navigation menu"
         className="header"
         id="header"
         style={{

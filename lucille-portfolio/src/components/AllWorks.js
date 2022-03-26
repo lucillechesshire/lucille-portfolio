@@ -80,6 +80,7 @@ const AllWorks = () => {
                 }}
                 className="project-tile"
                 src={slider.image}
+                alt={SliderData.title}
               />
               <h4 className="home-proj-title">{slider.title}</h4>
             </Link>
