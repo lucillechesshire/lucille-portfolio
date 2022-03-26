@@ -21,7 +21,7 @@ h2.lets-work-togeth {
   justify-content: center;
   row-gap: 0.75rem;
   column-gap: 0.75rem;
-  @media (min-width: 800px) {
+  @media (min-width: 50rem) {
     display: flex;
     gap: 2rem;
     justify-content: space-around;
@@ -31,21 +31,21 @@ h2.lets-work-togeth {
 
 #single-works img {
   display: block;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 15.625rem;
+  max-height: 15.625rem;
   margin: 0 auto;
-  @media (min-width: 1000px) {
-    max-width: 300px;
-    max-height: 300px;
+  @media (min-width: $smallDesk) {
+    max-width: 18.75rem;
+    max-height: 18.75rem;
   }
 }
 #single-works .color-block-img {
   display: block;
-  max-width: 100px;
-  max-height: 100px;
-  @media (min-width: 800px) {
-    max-width: 150px;
-    max-height: 150px;
+  max-width: 6.25rem;
+  max-height: 6.25rem;
+  @media (min-width: 50rem) {
+    max-width: 9.375rem;
+    max-height: 9.375rem;
   }
 }
 
@@ -55,7 +55,7 @@ p.hex {
 }
 
 #single-works h2 {
-  font-size: 1.2rem;
+  font-size: $med1FontSize;
 }
 
 .proj-title {
@@ -86,7 +86,7 @@ p.hex {
 }
 
 .screenshot-container {
-  height: 320px;
+  height: 20rem;
   width: 100%;
 }
 
@@ -107,13 +107,17 @@ p.hex {
 .capstone {
   background-color: black;
   color: white;
-  background-size: 40px 40px;
+  background-size: 2.5rem 2.5rem;
   background-image: linear-gradient(
       to right,
-      rgba(128, 128, 128, 0.356) 1px,
-      transparent 1px
+      rgba(128, 128, 128, 0.356) 0.0625rem,
+      transparent 0.0625rem
     ),
-    linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
+    linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.342) 0.0625rem,
+      transparent 0.0625rem
+    );
 }
 
 .javascript-game.screen-pic-container,
@@ -121,7 +125,6 @@ p.hex {
 .portfolio.screen-pic-container,
 .calculator.screen-pic-container,
 .capstone.screen-pic-container {
-
   background-color: #f9f9f7;
   color: white;
   background-image: unset;
@@ -140,23 +143,22 @@ p.hex {
 .year-skills {
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 0.0625rem solid black;
+  border-bottom: 0.0625rem solid black;
   padding: 2rem 0;
   margin: 2rem 0;
 }
 
 .see-more-btn {
-  background-color: #ff0084;
+  background-color: $pink;
   padding: 0.5rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   color: white;
 }
 
 .components-list {
   padding-bottom: 2rem;
-
 }
 
 .design-div {
@@ -177,7 +179,7 @@ p.hex {
 }
 
 section.screen-pic-container {
-  @media (min-width: 800px) {
+  @media (min-width: 50rem) {
     display: flex;
     gap: 1rem;
     justify-content: space-around;
@@ -192,13 +194,17 @@ section.screen-pic-container {
 .see-other-projects {
   background-color: black;
   color: white;
-  background-size: 40px 40px;
+  background-size: 2.5rem 2.5rem;
   background-image: linear-gradient(
       to right,
-      rgba(128, 128, 128, 0.356) 1px,
-      transparent 1px
+      rgba(128, 128, 128, 0.356) 0.0625rem,
+      transparent 0.0625rem
     ),
-    linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
+    linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.342) 0.0625rem,
+      transparent 0.0625rem
+    );
   padding-block: 1rem;
   @media (min-width: 600px) {
     margin-top: 5rem;
@@ -207,13 +213,13 @@ section.screen-pic-container {
 }
 
 .see-other-projects h4 {
-  @media (min-width: 600px) {
+  @media (min-width: $smallTablet) {
     text-align: center;
   }
 }
 
 .see-other-projects ul {
-  @media (min-width: 600px) {
+  @media (min-width: $smallTablet) {
     padding-top: 1rem;
     display: flex;
     gap: 1rem;
@@ -227,9 +233,9 @@ section.screen-pic-container {
 
 a.link-to-proj {
   color: white;
-  background-color: #ff0084;
+  background-color: $pink;
   padding: 0.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .link-container {
   display: flex;

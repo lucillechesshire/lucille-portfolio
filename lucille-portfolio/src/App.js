@@ -24,7 +24,7 @@ function App() {
         className="cursor"
         innerSize={35}
         outerSize={70}
-        color="44, 115, 210"
+        color="238, 52, 210"
         outerAlpha={0.2}
         innerScale={1}
         outerScale={1.2}

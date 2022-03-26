@@ -2,9 +2,13 @@ body {
   background-color: black;
   overflow-x: hidden;
   position: relative;
-  background-size: 40px 40px;
-  background-image: linear-gradient(to right, grey 1px, transparent 1px),
-    linear-gradient(to bottom, grey 1px, transparent 1px);
+  background-size: 2.5rem 2.5rem;
+  background-image: linear-gradient(
+      to right,
+      grey 0.0625rem,
+      transparent 0.0625rem
+    ),
+    linear-gradient(to bottom, grey 0.0625rem, transparent 0.0625rem);
 }
 
 html {
@@ -15,7 +19,7 @@ html {
 
 .padding {
   padding-inline: 1.5rem;
-  @media (min-width: 700px) {
+  @media (min-width: $medTablet) {
     padding-inline: 3.5rem;
   }
 }
@@ -24,6 +28,5 @@ a:hover {
   color: white;
 }
 a:active {
-  color: pink;
+  color: $pink;
 }
-

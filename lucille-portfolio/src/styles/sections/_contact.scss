@@ -4,13 +4,17 @@ section#contact {
   padding-inline: 0;
   background-color: black;
   color: white;
-  background-size: 40px 40px;
+  background-size: 2.5rem 2.5rem;
   background-image: linear-gradient(
       to right,
-      rgba(128, 128, 128, 0.356) 1px,
-      transparent 1px
+      rgba(128, 128, 128, 0.356) 0.0625rem,
+      transparent 0.0625rem
     ),
-    linear-gradient(to bottom, rgba(128, 128, 128, 0.342) 1px, transparent 1px);
+    linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.342) 0.0625rem,
+      transparent 0.0625rem
+    );
 }
 
 #contact p {
@@ -18,19 +22,19 @@ section#contact {
 }
 
 .email-btn {
-  background-color: #ff0084;
+  background-color: $pink;
   margin-block: 1.5rem;
   text-align: center;
   border-radius: 50%;
-  height: 180px;
-  width: 180px;
+  height: 11.25rem;
+  width: 11.25rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (min-width: 800px) {
-    height: 220px;
-    width: 220px;
+  @media (min-width: 50rem) {
+    height: 13.75rem;
+    width: 13.75rem;
     font-size: 1.5rem;
   }
 }
@@ -39,16 +43,16 @@ section#contact {
   max-width: 100%;
   align-items: flex-end;
   text-align: center;
-  @media (min-width: 700px) {
+  @media (min-width: $medTablet) {
     padding-top: 1rem;
-    width: 700px;
+    width: $medTablet;
     margin: 0 auto;
   }
 }
 
 .puzzle {
-  max-width: 100px;
-  height: 100px;
+  max-width: 6.25rem;
+  height: 6.25rem;
 }
 
 .together-marquee {
@@ -60,8 +64,8 @@ section#contact {
   padding-block: 1.5rem;
   margin-left: 1rem;
 
-  @media (min-width: 700px) {
-    font-size: 3rem;
+  @media (min-width: $medTablet) {
+    font-size: $largeFont;
     padding-top: 2.5rem;
     margin-left: 2rem;
   }

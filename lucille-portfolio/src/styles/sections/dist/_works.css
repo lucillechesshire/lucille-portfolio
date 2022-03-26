@@ -39,7 +39,7 @@ h3.project-title {
 }
 
 .arrow svg:hover {
-  color: #ff0084;
+  color: $pink;
 }
 
 .next {

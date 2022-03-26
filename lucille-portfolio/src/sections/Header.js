@@ -20,7 +20,7 @@ function Header({ isOpen, setIsOpen }) {
       <label htmlFor="burger" onClick={() => setIsOpen(!isOpen)}>
         <span
           style={{
-            background:
+            backgroundColor:
               pathname === "/movie-database" ||
               pathname === "/javascript-game" ||
               pathname === "/portfolio" ||
@@ -31,7 +31,7 @@ function Header({ isOpen, setIsOpen }) {
         ></span>
         <span
           style={{
-            background:
+            backgroundColor:
               pathname === "/movie-database" ||
               pathname === "/javascript-game" ||
               pathname === "/portfolio" ||
@@ -42,7 +42,7 @@ function Header({ isOpen, setIsOpen }) {
         ></span>
         <span
           style={{
-            background:
+            backgroundColor:
               pathname === "/movie-database" ||
               pathname === "/javascript-game" ||
               pathname === "/portfolio" ||
@@ -99,7 +99,7 @@ function Header({ isOpen, setIsOpen }) {
                       ? "#ffffff"
                       : "#000000",
                 }}
-                whileHover={{ scale: 1.2, color: "#ff0084" }}
+                whileHover={{ scale: 1.2, color: "$pink" }}
               >
                 Works
               </motion.span>
@@ -118,7 +118,7 @@ function Header({ isOpen, setIsOpen }) {
                       ? "#ffffff"
                       : "#000000",
                 }}
-                whileHover={{ scale: 1.2, color: "#ff0084" }}
+                whileHover={{ scale: 1.2, color: "$pink" }}
               >
                 About
               </motion.span>
@@ -137,7 +137,7 @@ function Header({ isOpen, setIsOpen }) {
                       ? "#ffffff"
                       : "#000000",
                 }}
-                whileHover={{ scale: 1.2, color: "#ff0084" }}
+                whileHover={{ scale: 1.2, color: "$pink" }}
               >
                 Contact
               </motion.span>

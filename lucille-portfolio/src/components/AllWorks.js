@@ -19,6 +19,9 @@ const AllWorks = () => {
   const isTablet = useMediaQuery({
     query: "(min-width: 700px)",
   });
+  const isDesktop = useMediaQuery({
+    query: "(min-width: 1020px)",
+  });
 
   const NextArrow = ({ onClick }) => {
     return (

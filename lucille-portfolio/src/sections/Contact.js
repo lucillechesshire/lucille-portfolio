@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import Marquee from "react-fast-marquee";
 import { useMediaQuery } from "react-responsive";
 import Marquee from "react-easy-marquee";
 
