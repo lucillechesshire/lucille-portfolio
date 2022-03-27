@@ -17,7 +17,7 @@ function Footer() {
           <FaGithub></FaGithub>
         </motion.a>
         <motion.a
-          href="https://linkedin.com/in/lucille-chesshire"
+          href="https://linkedin.com/in/lucillechesshire"
           target="_blank"
           rel="noopener"
           whileHover={{

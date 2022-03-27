@@ -8,8 +8,9 @@ import { Route, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import PageNotFound from "./components/PageNotFound";
+import Cursor from "../src/components/cursor/Cursor";
 
 function App() {
   const isTablet = useMediaQuery({
@@ -20,7 +21,8 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <AnimatedCursor
+      <Cursor />
+      {/* <AnimatedCursor
         className="cursor"
         innerSize={35}
         outerSize={70}
@@ -41,7 +43,7 @@ function App() {
           "button",
           ".link",
         ]}
-      />
+      /> */}
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
