@@ -1,16 +1,11 @@
 #header {
   padding: 1rem;
   background-color: #f9f9f7;
-  overflow-y: hidden;
 }
 
 #header a {
   text-decoration: none;
   color: black;
-}
-
-#header span a:hover {
-  color: $pink !important;
 }
 
 #header li {

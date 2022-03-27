@@ -243,7 +243,7 @@ function MoreInfo() {
                   <motion.a
                     style={{ color: "#ffffff" }}
                     whileHover={{
-                      color: "$pink",
+                      color: "#ff0084",
                     }}
                     href={`/${project.slug}`}
                   >

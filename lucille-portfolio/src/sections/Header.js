@@ -87,7 +87,7 @@ function Header({ isOpen, setIsOpen }) {
           onClick={() => setIsOpen(!isOpen)}
         >
           <li>
-            <HashLink to="#works">
+            <HashLink to="/#works">
               <motion.span
                 style={{
                   display: "inline-block",
@@ -100,7 +100,7 @@ function Header({ isOpen, setIsOpen }) {
             </HashLink>
           </li>
           <li>
-            <HashLink to="#about">
+            <HashLink to="/#about">
               <motion.span
                 style={{
                   display: "inline-block",

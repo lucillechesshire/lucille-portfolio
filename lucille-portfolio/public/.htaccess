@@ -1,4 +1,8 @@
 Options -MultiViews
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/capstone
+RewriteCond %{REQUEST_URI} !/portfolio
+RewriteCond %{REQUEST_URI} !/javascript-game
+RewriteCond %{REQUEST_URI} !/movie-database
 RewriteRule ^ index.html [QSA,L]
