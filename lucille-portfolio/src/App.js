@@ -16,12 +16,16 @@ function App() {
   const isTablet = useMediaQuery({
     query: "(min-width: 700px)",
   });
+  const isDesktop = useMediaQuery({
+    query: "(min-width: 1020px)",
+  });
 
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <Cursor />
+
       {/* <AnimatedCursor
         className="cursor"
         innerSize={35}

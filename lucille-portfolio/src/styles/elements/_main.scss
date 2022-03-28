@@ -27,9 +27,17 @@ html {
 a:hover {
   color: white;
 }
+
 img:active,
+img:focus,
 a:active,
 a:focus {
   color: $pink;
 }
 
+.slick-slide:active,
+.slick-slide:focus,
+.slick-current:active,
+.slick-current:focus {
+  color: $pink;
+}

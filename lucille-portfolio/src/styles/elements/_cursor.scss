@@ -7,6 +7,9 @@
   transform: translate3d(0, 0, 0);
   position: fixed;
   mix-blend-mode: difference;
+  @media (max-width: $smallDesk) {
+    display: none;
+  }
 }
 
 .main-cursor {
