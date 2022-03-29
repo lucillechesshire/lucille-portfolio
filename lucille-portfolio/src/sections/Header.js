@@ -6,6 +6,13 @@ import { motion } from "framer-motion";
 
 function Header({ isOpen, setIsOpen }) {
   const { pathname } = useLocation();
+  //const [navLinkColor, setNavLinkColor] = useState("#fff");
+
+  function blurOnClick(e) {
+    console.log(e.target);
+
+    e.target.blur();
+  }
 
   return (
     <>
@@ -16,39 +23,21 @@ function Header({ isOpen, setIsOpen }) {
         readOnly={true}
         alt="navigation burger"
       />
-
+      {console.log(pathname)}
       <label htmlFor="burger" onClick={() => setIsOpen(!isOpen)}>
         <span
           style={{
-            backgroundColor:
-              pathname === "/movie-database" ||
-              pathname === "/javascript-game" ||
-              pathname === "/portfolio" ||
-              pathname === "/calculator"
-                ? "white"
-                : "white",
+            backgroundColor: "#ffffff",
           }}
         ></span>
         <span
           style={{
-            backgroundColor:
-              pathname === "/movie-database" ||
-              pathname === "/javascript-game" ||
-              pathname === "/portfolio" ||
-              pathname === "/calculator"
-                ? "#ffffff"
-                : "#ffffff",
+            backgroundColor: "#ffffff",
           }}
         ></span>
         <span
           style={{
-            backgroundColor:
-              pathname === "/movie-database" ||
-              pathname === "/javascript-game" ||
-              pathname === "/portfolio" ||
-              pathname === "/calculator"
-                ? "#ffffff"
-                : "#ffffff",
+            backgroundColor: "#ffffff",
           }}
         ></span>
       </label>
@@ -87,7 +76,7 @@ function Header({ isOpen, setIsOpen }) {
           onClick={() => setIsOpen(!isOpen)}
         >
           <li>
-            <HashLink to="/#works">
+            <HashLink to="/#works" onClick={blurOnClick}>
               <motion.span
                 style={{
                   display: "inline-block",
@@ -100,7 +89,7 @@ function Header({ isOpen, setIsOpen }) {
             </HashLink>
           </li>
           <li>
-            <HashLink to="/#about">
+            <HashLink to="/#about" onClick={blurOnClick}>
               <motion.span
                 style={{
                   display: "inline-block",
@@ -113,7 +102,7 @@ function Header({ isOpen, setIsOpen }) {
             </HashLink>
           </li>
           <li>
-            <HashLink to="/#contact">
+            <HashLink to="/#contact" onClick={blurOnClick}>
               <motion.span
                 style={{
                   display: "inline-block",
