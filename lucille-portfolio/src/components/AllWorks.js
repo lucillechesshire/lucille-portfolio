@@ -62,13 +62,13 @@ const AllWorks = () => {
       className="slider"
       id="works"
     >
-      {isTablet ? (
-        <Marquee className="works-marquee" duration={15000} height="7rem">
-          <h2 className="selected-works">Selected Works</h2>
-        </Marquee>
-      ) : (
+      {/* {isTablet ? ( */}
+      <Marquee className="works-marquee" duration={15000} height="7rem">
         <h2 className="selected-works">Selected Works</h2>
-      )}
+      </Marquee>
+      {/* ) : ( */}
+      {/* <h2 className="selected-works">Selected Works</h2>
+      )} */}
 
       <Slider {...settings}>
         {SliderData.map((slider, index) => (

@@ -225,13 +225,13 @@ function MoreInfo() {
             <p className="padding">{project.development}</p>
           </motion.div>
           <div className="see-other-projects">
-            {isTablet ? (
-              <Marquee duration={20000} height="7rem" gradient={false}>
-                <h4 className="links-to">More Projects</h4>
-              </Marquee>
-            ) : (
+            {/* {isTablet ? ( */}
+            <Marquee duration={20000} height="7rem" gradient={false}>
               <h4 className="links-to">More Projects</h4>
-            )}
+            </Marquee>
+            {/* ) : ( */}
+            {/* <h4 className="links-to">More Projects</h4>
+            )} */}
             <ul className="padding">
               {SliderData.map((project, index) => (
                 <motion.li

@@ -22,13 +22,13 @@ function Contact() {
       variants={fadeInVariants}
       id="contact"
     >
-      {isTablet ? (
-        <Marquee duration={15000} height="7rem" className="together-marquee">
-          <h2>Let's Work Together!</h2>
-        </Marquee>
-      ) : (
-        <h2 className="lets-work-togeth">Let's Work Together!</h2>
-      )}
+      {/* {isTablet ? ( */}
+      <Marquee duration={15000} height="7rem" className="together-marquee">
+        <h2>Let's Work Together!</h2>
+      </Marquee>
+      {/* ) : ( */}
+      {/* <h2 className="lets-work-togeth">Let's Work Together!</h2>
+      )} */}
 
       <div className="contact-container">
         <p>
